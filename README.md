@@ -20,12 +20,12 @@ This scanner detects:
 
 - [GitHub CLI](https://cli.github.com) (authenticated)
 - Node.js 16+
-- npm
+- pnpm
 
 ## Installation
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Usage
@@ -186,7 +186,7 @@ The scanner will warn about these files but skip scanning them.
 ## Testing
 
 ```bash
-npm test
+pnpm test
 ```
 
 ## Architecture

@@ -38,7 +38,7 @@ fi
 
 # Check for dependencies
 if [ ! -d "node_modules" ]; then
-    echo "ERROR: Node dependencies not installed. Run: npm install"
+    echo "ERROR: Node dependencies not installed. Run: pnpm install"
     exit 1
 fi
 
