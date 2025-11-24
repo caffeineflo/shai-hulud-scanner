@@ -61,9 +61,19 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
   ⚠️  LIKELY_VULNERABLE
       - posthog-node@5.11.3
 
-[3/150] Scanning: betterment/clean-repo
+[3/150] Scanning: betterment/safe-repo
+  ℹ️  HAS_AFFECTED_PACKAGES (safe versions)
+      - posthog-node@^6.0.0 (malicious: 5.11.3, 5.13.3, 4.18.1)
+
+[4/150] Scanning: betterment/clean-repo
   ✓ Clean
 ```
+
+**Status Meanings:**
+- **CONFIRMED_INFECTED**: Active malware indicators (runners, workflows, descriptions)
+- **LIKELY_VULNERABLE**: Has malicious package versions installed
+- **HAS_AFFECTED_PACKAGES**: Uses packages from the affected list, but at safe versions
+- **Clean**: No malicious packages or indicators
 
 ### JSON Output (`results.json`)
 
@@ -78,11 +88,25 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
   "findings": {
     "confirmed_infected": [...],
     "likely_vulnerable": [...],
-    "potentially_at_risk": [...]
+    "potentially_at_risk": [...],
+    "has_affected_packages": [
+      {
+        "repo": "betterment/safe-repo",
+        "packages": [
+          {
+            "package": "posthog-node",
+            "declared_version": "^6.0.0",
+            "malicious_versions": ["5.11.3", "5.13.3", "4.18.1"]
+          }
+        ]
+      }
+    ]
   },
   "errors": [...]
 }
 ```
+
+The `has_affected_packages` array lists repos that use packages from the affected list, but at versions that don't match the known malicious versions. This helps identify repos for ongoing monitoring in case new vulnerabilities are discovered.
 
 ## Testing
 
