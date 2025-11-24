@@ -1,0 +1,11 @@
+# Cache files
+.scan-cache.json
+
+# Results
+results.json
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store

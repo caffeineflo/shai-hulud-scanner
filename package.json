@@ -1,0 +1,14 @@
+{
+  "name": "shai-hulud-scanner",
+  "version": "1.0.0",
+  "description": "Scanner for Shai-Hulud NPM malware",
+  "main": "lib/check-dependencies.js",
+  "scripts": {
+    "test": "node test/run-tests.js"
+  },
+  "dependencies": {
+    "semver": "^7.6.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
