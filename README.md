@@ -67,14 +67,16 @@ ORG_NAME=facebook ./scan-shai-hulud.sh
 [1/150] Scanning: YourOrg/example-monorepo
   → Found 5 packages (monorepo)
     Checking: packages/frontend/package.json
+      ✓ Found package-lock.json
     Checking: packages/backend/package.json
+      ✓ Found yarn.lock
     Checking: packages/shared/package.json
+      ⚠️  WARNING: Failed to fetch packages/shared/pnpm-lock.yaml (may be >1MB)
     Checking: packages/mobile/package.json
+      ✓ Found pnpm-lock.yaml
     Checking: apps/admin/package.json
   ⚠️  LIKELY_VULNERABLE
       - posthog-node@5.11.3 (in packages/backend/package.json)
-  ⚠️  WARNINGS:
-      - packages/frontend/pnpm-lock.yaml: Failed to fetch (may be >1MB)
 
 [2/150] Scanning: YourOrg/infected-repo
   ⚠️  CONFIRMED_INFECTED

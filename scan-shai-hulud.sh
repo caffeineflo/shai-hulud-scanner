@@ -228,6 +228,10 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
                     --jq '.content' 2>&1 | base64 -d 2>&1)
 
                 if [ $? -eq 0 ] && [ -n "$LOCK_CONTENT" ]; then
+                    # Successfully fetched lock file
+                    if [ "$PACKAGE_COUNT" -gt 1 ]; then
+                        echo "      ✓ Found $LOCK_NAME"
+                    fi
                     # Add to lock files array
                     TMP_LOCK="/tmp/scan-lock-$$-$(echo "$LOCK_NAME" | tr '.' '-')"
                     echo "$LOCK_CONTENT" > "$TMP_LOCK"
