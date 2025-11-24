@@ -1,6 +1,8 @@
 # Shai-Hulud NPM Malware Scanner
 
-Comprehensive scanner to detect Betterment repositories affected by the Shai-Hulud NPM malware attack (November 24, 2025).
+Comprehensive scanner to detect GitHub repositories affected by the Shai-Hulud NPM malware attack (November 24, 2025).
+
+**This scanner works for any GitHub organization** - just set the `ORG_NAME` environment variable to scan your organization's repositories.
 
 ## Overview
 
@@ -33,7 +35,7 @@ npm install
 ```
 
 The scanner will:
-1. Fetch all repositories from the Betterment organization
+1. Fetch all repositories from the specified GitHub organization
 2. Check each repo for malicious dependencies and infection indicators
 3. Output live results to console
 4. Save detailed findings to `results.json`
@@ -42,13 +44,19 @@ The scanner will:
 
 If interrupted, the scanner saves progress to `.scan-cache.json`. On restart, it will prompt to resume from the last checkpoint.
 
-### Environment Variables
+### Scanning Different Organizations
 
-- `ORG_NAME`: GitHub organization to scan (default: `Betterment`)
+Set the `ORG_NAME` environment variable to scan any GitHub organization:
 
-Example:
 ```bash
-ORG_NAME=MyOrg ./scan-shai-hulud.sh
+# Scan your organization
+ORG_NAME=YourOrgName ./scan-shai-hulud.sh
+
+# Scan another organization
+ORG_NAME=facebook ./scan-shai-hulud.sh
+
+# Default (scans Betterment as an example)
+./scan-shai-hulud.sh
 ```
 
 ## Output
@@ -56,7 +64,7 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
 ### Console Output
 
 ```
-[1/150] Scanning: betterment/example-monorepo
+[1/150] Scanning: YourOrg/example-monorepo
   → Found 5 packages (monorepo)
     Checking: packages/frontend/package.json
     Checking: packages/backend/package.json
@@ -68,25 +76,25 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
   ⚠️  WARNINGS:
       - packages/frontend/pnpm-lock.yaml: Failed to fetch (may be >1MB)
 
-[2/150] Scanning: betterment/infected-repo
+[2/150] Scanning: YourOrg/infected-repo
   ⚠️  CONFIRMED_INFECTED
       - runner: SHA1HULUD
       - workflow: formatter_123456789.yml
 
-[3/150] Scanning: betterment/safe-repo
+[3/150] Scanning: YourOrg/safe-repo
   ℹ️  HAS_AFFECTED_PACKAGES (safe versions)
       - posthog-node@^6.0.0 (malicious: 5.11.3, 5.13.3, 4.18.1) (in package.json)
 
-[4/150] Scanning: betterment/orphaned-locks
+[4/150] Scanning: YourOrg/orphaned-locks
   ⚠️  WARNING: Found lock files without package.json:
       - old/package-lock.json
       - legacy/yarn.lock
   → Cannot scan without package.json (orphaned lock files)
 
-[5/150] Scanning: betterment/clean-repo
+[5/150] Scanning: YourOrg/clean-repo
   ✓ Clean
 
-[6/150] Scanning: betterment/non-nodejs-repo
+[6/150] Scanning: YourOrg/non-nodejs-repo
   → No Node.js packages found (searched for package.json and all lock file types)
 ```
 
@@ -102,7 +110,7 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
 {
   "scan_metadata": {
     "scan_date": "2025-11-24T...",
-    "org": "Betterment",
+    "org": "YourOrg",
     "total_repos_scanned": 150,
     "repos_with_npm": 87
   },
@@ -110,7 +118,7 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
     "confirmed_infected": [...],
     "likely_vulnerable": [
       {
-        "repo": "betterment/example-monorepo",
+        "repo": "YourOrg/example-monorepo",
         "vulnerabilities": [
           {
             "package": "posthog-node",
@@ -132,7 +140,7 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
     "potentially_at_risk": [...],
     "has_affected_packages": [
       {
-        "repo": "betterment/safe-repo",
+        "repo": "YourOrg/safe-repo",
         "packages": [
           {
             "package": "posthog-node",
