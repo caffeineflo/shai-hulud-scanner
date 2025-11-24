@@ -14,13 +14,13 @@ function testDetectsMaliciousDependency() {
     { package: '@asyncapi/specs', version: '6.8.2' }
   ];
 
-  const findings = checkDependencies(packageJson, null, maliciousPackages);
+  const result = checkDependencies(packageJson, null, maliciousPackages);
 
-  assert.strictEqual(findings.length, 2, 'Should detect 2 malicious packages');
-  assert.strictEqual(findings[0].package, 'posthog-node');
-  assert.strictEqual(findings[0].match_type, 'direct');
-  assert.strictEqual(findings[1].package, '@asyncapi/specs');
-  assert.strictEqual(findings[1].match_type, 'direct');
+  assert.strictEqual(result.vulnerabilities.length, 2, 'Should detect 2 malicious packages');
+  assert.strictEqual(result.vulnerabilities[0].package, 'posthog-node');
+  assert.strictEqual(result.vulnerabilities[0].match_type, 'direct');
+  assert.strictEqual(result.vulnerabilities[1].package, '@asyncapi/specs');
+  assert.strictEqual(result.vulnerabilities[1].match_type, 'direct');
 }
 
 function testNoFalsePositives() {
@@ -32,9 +32,29 @@ function testNoFalsePositives() {
     { package: 'posthog-node', version: '5.11.3' }
   ];
 
-  const findings = checkDependencies(packageJson, null, maliciousPackages);
+  const result = checkDependencies(packageJson, null, maliciousPackages);
 
-  assert.strictEqual(findings.length, 0, 'Should not flag safe packages');
+  assert.strictEqual(result.vulnerabilities.length, 0, 'Should not flag safe packages');
+  assert.strictEqual(result.affectedPackages.length, 0, 'Should not flag unrelated packages');
+}
+
+function testTracksAffectedPackages() {
+  const packageJson = JSON.stringify({
+    dependencies: { 'posthog-node': '^6.0.0' }  // Safe version, but affected package
+  });
+
+  const maliciousPackages = [
+    { package: 'posthog-node', version: '5.11.3' },
+    { package: 'posthog-node', version: '5.13.3' }
+  ];
+
+  const result = checkDependencies(packageJson, null, maliciousPackages);
+
+  assert.strictEqual(result.vulnerabilities.length, 0, 'Should not flag as vulnerability');
+  assert.strictEqual(result.affectedPackages.length, 1, 'Should track affected package');
+  assert.strictEqual(result.affectedPackages[0].package, 'posthog-node');
+  assert.strictEqual(result.affectedPackages[0].declared_version, '^6.0.0');
+  assert.deepStrictEqual(result.affectedPackages[0].malicious_versions, ['5.11.3', '5.13.3']);
 }
 
 function testPackageLockDetection() {
@@ -52,11 +72,11 @@ function testPackageLockDetection() {
   ];
 
   const lockFiles = [{ type: 'package-lock.json', content: packageLock }];
-  const findings = checkDependencies(packageJson, lockFiles, maliciousPackages);
+  const result = checkDependencies(packageJson, lockFiles, maliciousPackages);
 
-  assert.strictEqual(findings.length, 1, 'Should detect malicious package from lock file');
-  assert.strictEqual(findings[0].package, 'posthog-node');
-  assert.strictEqual(findings[0].malicious_version, '5.11.3');
+  assert.strictEqual(result.vulnerabilities.length, 1, 'Should detect malicious package from lock file');
+  assert.strictEqual(result.vulnerabilities[0].package, 'posthog-node');
+  assert.strictEqual(result.vulnerabilities[0].malicious_version, '5.11.3');
 }
 
 function testYarnLockDetection() {
@@ -74,10 +94,10 @@ function testYarnLockDetection() {
   ];
 
   const lockFiles = [{ type: 'yarn.lock', content: yarnLock }];
-  const findings = checkDependencies(packageJson, lockFiles, maliciousPackages);
+  const result = checkDependencies(packageJson, lockFiles, maliciousPackages);
 
-  assert.strictEqual(findings.length, 1, 'Should detect malicious package from yarn.lock');
-  assert.strictEqual(findings[0].package, 'posthog-node');
+  assert.strictEqual(result.vulnerabilities.length, 1, 'Should detect malicious package from yarn.lock');
+  assert.strictEqual(result.vulnerabilities[0].package, 'posthog-node');
 }
 
 function testPnpmLockDetection() {
@@ -95,16 +115,17 @@ function testPnpmLockDetection() {
   ];
 
   const lockFiles = [{ type: 'pnpm-lock.yaml', content: pnpmLock }];
-  const findings = checkDependencies(packageJson, lockFiles, maliciousPackages);
+  const result = checkDependencies(packageJson, lockFiles, maliciousPackages);
 
-  assert.strictEqual(findings.length, 1, 'Should detect malicious package from pnpm-lock.yaml');
-  assert.strictEqual(findings[0].package, 'posthog-node');
+  assert.strictEqual(result.vulnerabilities.length, 1, 'Should detect malicious package from pnpm-lock.yaml');
+  assert.strictEqual(result.vulnerabilities[0].package, 'posthog-node');
 }
 
 function runTests() {
   try {
     testDetectsMaliciousDependency();
     testNoFalsePositives();
+    testTracksAffectedPackages();
     testPackageLockDetection();
     testYarnLockDetection();
     testPnpmLockDetection();

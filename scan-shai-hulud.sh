@@ -96,7 +96,8 @@ cat > "$OUTPUT_FILE" <<EOF
   "findings": {
     "confirmed_infected": [],
     "likely_vulnerable": [],
-    "potentially_at_risk": []
+    "potentially_at_risk": [],
+    "has_affected_packages": []
   },
   "errors": []
 }
@@ -154,7 +155,7 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
         --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo "")
 
     # Check dependencies with lock files
-    DEP_FINDINGS=$(node -e "
+    DEP_RESULT=$(node -e "
         const { checkDependencies } = require('./lib/check-dependencies');
         const fs = require('fs');
         const malicious = JSON.parse(fs.readFileSync('shai_hulud_packages.json', 'utf8'));
@@ -169,9 +170,12 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
         if (yarnLock) lockFiles.push({ type: 'yarn.lock', content: yarnLock });
         if (pnpmLock) lockFiles.push({ type: 'pnpm-lock.yaml', content: pnpmLock });
 
-        const findings = checkDependencies(packageJson, lockFiles.length > 0 ? lockFiles : null, malicious);
-        console.log(JSON.stringify(findings));
-    " 2>/dev/null || echo "[]")
+        const result = checkDependencies(packageJson, lockFiles.length > 0 ? lockFiles : null, malicious);
+        console.log(JSON.stringify(result));
+    " 2>/dev/null || echo '{"vulnerabilities":[],"affectedPackages":[]}')
+
+    DEP_FINDINGS=$(echo "$DEP_RESULT" | jq '.vulnerabilities')
+    AFFECTED_PKGS=$(echo "$DEP_RESULT" | jq '.affectedPackages')
 
     # Check for runners
     RUNNERS=$(gh api "/repos/$FULL_NAME/actions/runners" \
@@ -198,6 +202,9 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
     elif [ "$(echo "$DEP_FINDINGS" | jq 'length')" -gt 0 ]; then
         echo "  ⚠️  LIKELY_VULNERABLE"
         echo "$DEP_FINDINGS" | jq -r '.[] | "      - \(.package)@\(.malicious_version)"'
+    elif [ "$(echo "$AFFECTED_PKGS" | jq 'length')" -gt 0 ]; then
+        echo "  ℹ️  HAS_AFFECTED_PACKAGES (safe versions)"
+        echo "$AFFECTED_PKGS" | jq -r '.[] | "      - \(.package)@\(.declared_version) (malicious: \(.malicious_versions | join(", ")))"'
     else
         echo "  ✓ Clean"
     fi
