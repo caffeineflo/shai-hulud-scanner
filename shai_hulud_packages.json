@@ -1,1882 +1,3574 @@
 [
   {
     "package": "@zapier/zapier-sdk",
-    "version": "0.15.5",
-    "weeklyDownloads": 2636363
+    "version": "0.15.5"
   },
   {
     "package": "@zapier/zapier-sdk",
-    "version": "0.15.7",
-    "weeklyDownloads": 2636363
+    "version": "0.15.7"
   },
   {
     "package": "@posthog/core",
-    "version": "1.5.6",
-    "weeklyDownloads": 1983172
+    "version": "1.5.6"
   },
   {
     "package": "posthog-node",
-    "version": "5.11.3",
-    "weeklyDownloads": 1551681
+    "version": "5.11.3"
   },
   {
     "package": "posthog-node",
-    "version": "5.13.3",
-    "weeklyDownloads": 1551681
+    "version": "5.13.3"
   },
   {
     "package": "posthog-node",
-    "version": "4.18.1",
-    "weeklyDownloads": 1551681
+    "version": "4.18.1"
   },
   {
     "package": "@asyncapi/specs",
-    "version": "6.10.1",
-    "weeklyDownloads": 1439127
+    "version": "6.10.1"
   },
   {
     "package": "@asyncapi/specs",
-    "version": "6.8.2",
-    "weeklyDownloads": 1439127
+    "version": "6.8.2"
   },
   {
     "package": "@asyncapi/specs",
-    "version": "6.9.1",
-    "weeklyDownloads": 1439127
+    "version": "6.9.1"
   },
   {
     "package": "@asyncapi/specs",
-    "version": "6.8.3",
-    "weeklyDownloads": 1439127
+    "version": "6.8.3"
   },
   {
     "package": "@postman/tunnel-agent",
-    "version": "0.6.6",
-    "weeklyDownloads": 1222937
+    "version": "0.6.6"
   },
   {
     "package": "@postman/tunnel-agent",
-    "version": "0.6.5",
-    "weeklyDownloads": 1222937
+    "version": "0.6.5"
   },
   {
     "package": "posthog-react-native",
-    "version": "4.12.5",
-    "weeklyDownloads": 552084
+    "version": "4.12.5"
   },
   {
     "package": "posthog-react-native",
-    "version": "4.11.1",
-    "weeklyDownloads": 552084
+    "version": "4.11.1"
   },
   {
     "package": "@asyncapi/parser",
-    "version": "3.4.1",
-    "weeklyDownloads": 454054
+    "version": "3.4.1"
   },
   {
     "package": "@asyncapi/parser",
-    "version": "3.4.2",
-    "weeklyDownloads": 454054
+    "version": "3.4.2"
   },
   {
     "package": "@asyncapi/openapi-schema-parser",
-    "version": "3.0.25",
-    "weeklyDownloads": 172615
+    "version": "3.0.25"
   },
   {
     "package": "@asyncapi/avro-schema-parser",
-    "version": "3.0.25",
-    "weeklyDownloads": 163621
+    "version": "3.0.25"
   },
   {
     "package": "@asyncapi/avro-schema-parser",
-    "version": "3.0.26",
-    "weeklyDownloads": 163621
+    "version": "3.0.26"
   },
   {
     "package": "@asyncapi/protobuf-schema-parser",
-    "version": "3.6.1",
-    "weeklyDownloads": 141222
+    "version": "3.6.1"
   },
   {
     "package": "@asyncapi/protobuf-schema-parser",
-    "version": "3.5.3",
-    "weeklyDownloads": 141222
+    "version": "3.5.3"
   },
   {
     "package": "@asyncapi/react-component",
-    "version": "2.6.6",
-    "weeklyDownloads": 130613
+    "version": "2.6.6"
   },
   {
     "package": "@asyncapi/generator",
-    "version": "2.8.5",
-    "weeklyDownloads": 83589
+    "version": "2.8.5"
   },
   {
     "package": "@posthog/ai",
-    "version": "7.1.2",
-    "weeklyDownloads": 70906
+    "version": "7.1.2"
   },
   {
     "package": "@asyncapi/modelina",
-    "version": "5.10.2",
-    "weeklyDownloads": 68730
+    "version": "5.10.2"
   },
   {
     "package": "@asyncapi/modelina",
-    "version": "5.10.3",
-    "weeklyDownloads": 68730
+    "version": "5.10.3"
   },
   {
     "package": "@asyncapi/generator-react-sdk",
-    "version": "1.1.4",
-    "weeklyDownloads": 67985
+    "version": "1.1.4"
   },
   {
     "package": "@asyncapi/generator-react-sdk",
-    "version": "1.1.5",
-    "weeklyDownloads": 67985
+    "version": "1.1.5"
   },
   {
     "package": "@postman/csv-parse",
-    "version": "4.0.3",
-    "weeklyDownloads": 57070
+    "version": "4.0.3"
   },
   {
     "package": "@postman/csv-parse",
-    "version": "4.0.4",
-    "weeklyDownloads": 57070
+    "version": "4.0.4"
   },
   {
     "package": "@postman/csv-parse",
-    "version": "4.0.5",
-    "weeklyDownloads": 57070
+    "version": "4.0.5"
   },
   {
     "package": "posthog-react-native-session-replay",
-    "version": "1.2.2",
-    "weeklyDownloads": 56023
+    "version": "1.2.2"
   },
   {
     "package": "@asyncapi/converter",
-    "version": "1.6.3",
-    "weeklyDownloads": 51156
+    "version": "1.6.3"
   },
   {
     "package": "@asyncapi/multi-parser",
-    "version": "2.2.1",
-    "weeklyDownloads": 49289
+    "version": "2.2.1"
   },
   {
     "package": "@asyncapi/multi-parser",
-    "version": "2.2.2",
-    "weeklyDownloads": 49289
+    "version": "2.2.2"
   },
   {
     "package": "@posthog/cli",
-    "version": "0.5.15",
-    "weeklyDownloads": 49272
+    "version": "0.5.15"
   },
   {
     "package": "@zapier/secret-scrubber",
-    "version": "1.1.3",
-    "weeklyDownloads": 42438
+    "version": "1.1.3"
   },
   {
     "package": "@zapier/secret-scrubber",
-    "version": "1.1.4",
-    "weeklyDownloads": 42438
+    "version": "1.1.4"
   },
   {
     "package": "@zapier/secret-scrubber",
-    "version": "1.1.5",
-    "weeklyDownloads": 42438
+    "version": "1.1.5"
   },
   {
     "package": "zapier-platform-schema",
-    "version": "18.0.2",
-    "weeklyDownloads": 38559
+    "version": "18.0.2"
   },
   {
     "package": "zapier-platform-core",
-    "version": "18.0.2",
-    "weeklyDownloads": 38186
+    "version": "18.0.2"
   },
   {
     "package": "zapier-platform-core",
-    "version": "18.0.3",
-    "weeklyDownloads": 38186
+    "version": "18.0.3"
   },
   {
     "package": "@ensdomains/address-encoder",
-    "version": "1.1.5",
-    "weeklyDownloads": 37524
+    "version": "1.1.5"
   },
   {
     "package": "@ensdomains/content-hash",
-    "version": "3.0.1",
-    "weeklyDownloads": 35779
+    "version": "3.0.1"
   },
   {
     "package": "crypto-addr-codec",
-    "version": "0.1.9",
-    "weeklyDownloads": 34882
+    "version": "0.1.9"
   },
   {
     "package": "@asyncapi/nunjucks-filters",
-    "version": "2.1.1",
-    "weeklyDownloads": 34226
+    "version": "2.1.1"
   },
   {
     "package": "@asyncapi/nunjucks-filters",
-    "version": "2.1.2",
-    "weeklyDownloads": 34226
+    "version": "2.1.2"
   },
   {
     "package": "@asyncapi/bundler",
-    "version": "0.6.5",
-    "weeklyDownloads": 33328
+    "version": "0.6.5"
   },
   {
     "package": "@asyncapi/bundler",
-    "version": "0.6.6",
-    "weeklyDownloads": 33328
+    "version": "0.6.6"
   },
   {
     "package": "@posthog/nextjs-config",
-    "version": "1.5.1",
-    "weeklyDownloads": 33129
+    "version": "1.5.1"
   },
   {
     "package": "@asyncapi/html-template",
-    "version": "3.3.2",
-    "weeklyDownloads": 30340
+    "version": "3.3.2"
   },
   {
     "package": "@asyncapi/html-template",
-    "version": "3.3.3",
-    "weeklyDownloads": 30340
+    "version": "3.3.3"
   },
   {
     "package": "@asyncapi/diff",
-    "version": "0.5.1",
-    "weeklyDownloads": 29988
+    "version": "0.5.1"
   },
   {
     "package": "@asyncapi/diff",
-    "version": "0.5.2",
-    "weeklyDownloads": 29988
+    "version": "0.5.2"
   },
   {
     "package": "@asyncapi/cli",
-    "version": "4.1.2",
-    "weeklyDownloads": 29857
+    "version": "4.1.2"
   },
   {
     "package": "@asyncapi/optimizer",
-    "version": "1.0.5",
-    "weeklyDownloads": 28860
+    "version": "1.0.5"
   },
   {
     "package": "@asyncapi/optimizer",
-    "version": "1.0.6",
-    "weeklyDownloads": 28860
+    "version": "1.0.6"
   },
   {
     "package": "@asyncapi/modelina-cli",
-    "version": "5.10.2",
-    "weeklyDownloads": 28041
+    "version": "5.10.2"
   },
   {
     "package": "@asyncapi/modelina-cli",
-    "version": "5.10.3",
-    "weeklyDownloads": 28041
+    "version": "5.10.3"
   },
   {
     "package": "@postman/aether-icons",
-    "version": "2.23.2",
-    "weeklyDownloads": 25176
+    "version": "2.23.2"
   },
   {
     "package": "@postman/aether-icons",
-    "version": "2.23.4",
-    "weeklyDownloads": 25176
+    "version": "2.23.4"
   },
   {
     "package": "@asyncapi/generator-components",
-    "version": "0.3.2",
-    "weeklyDownloads": 23453
+    "version": "0.3.2"
   },
   {
     "package": "@asyncapi/generator-helpers",
-    "version": "0.2.1",
-    "weeklyDownloads": 21886
+    "version": "0.2.1"
   },
   {
     "package": "@asyncapi/generator-helpers",
-    "version": "0.2.2",
-    "weeklyDownloads": 21886
+    "version": "0.2.2"
   },
   {
     "package": "zapier-platform-cli",
-    "version": "18.0.3",
-    "weeklyDownloads": 21470
+    "version": "18.0.3"
   },
   {
     "package": "@posthog/rrweb",
-    "version": "0.0.31",
-    "weeklyDownloads": 12666
+    "version": "0.0.31"
   },
   {
     "package": "ethereum-ens",
-    "version": "0.8.1",
-    "weeklyDownloads": 12656
+    "version": "0.8.1"
   },
   {
     "package": "@posthog/rrweb-utils",
-    "version": "0.0.31",
-    "weeklyDownloads": 12630
+    "version": "0.0.31"
   },
   {
     "package": "@posthog/rrweb-snapshot",
-    "version": "0.0.31",
-    "weeklyDownloads": 12629
+    "version": "0.0.31"
   },
   {
     "package": "@posthog/rrdom",
-    "version": "0.0.31",
-    "weeklyDownloads": 12627
+    "version": "0.0.31"
   },
   {
     "package": "@asyncapi/problem",
-    "version": "1.0.1",
-    "weeklyDownloads": 12111
+    "version": "1.0.1"
   },
   {
     "package": "@asyncapi/problem",
-    "version": "1.0.2",
-    "weeklyDownloads": 12111
+    "version": "1.0.2"
   },
   {
     "package": "@postman/secret-scanner-wasm",
-    "version": "2.1.3",
-    "weeklyDownloads": 9731
+    "version": "2.1.3"
   },
   {
     "package": "@postman/secret-scanner-wasm",
-    "version": "2.1.2",
-    "weeklyDownloads": 9731
+    "version": "2.1.2"
   },
   {
     "package": "@postman/secret-scanner-wasm",
-    "version": "2.1.4",
-    "weeklyDownloads": 9731
+    "version": "2.1.4"
   },
   {
     "package": "@ensdomains/eth-ens-namehash",
-    "version": "2.0.16",
-    "weeklyDownloads": 8578
+    "version": "2.0.16"
   },
   {
     "package": "posthog-docusaurus",
-    "version": "2.0.6",
-    "weeklyDownloads": 6432
+    "version": "2.0.6"
   },
   {
     "package": "@postman/pretty-ms",
-    "version": "6.1.1",
-    "weeklyDownloads": 4587
+    "version": "6.1.1"
   },
   {
     "package": "@postman/pretty-ms",
-    "version": "6.1.3",
-    "weeklyDownloads": 4587
+    "version": "6.1.3"
   },
   {
     "package": "@postman/pretty-ms",
-    "version": "6.1.2",
-    "weeklyDownloads": 4587
+    "version": "6.1.2"
   },
   {
     "package": "web-types-lit",
-    "version": "0.1.1",
-    "weeklyDownloads": 4482
+    "version": "0.1.1"
   },
   {
     "package": "mcp-use",
-    "version": "1.4.2",
-    "weeklyDownloads": 4071
+    "version": "1.4.2"
   },
   {
     "package": "mcp-use",
-    "version": "1.4.3",
-    "weeklyDownloads": 4071
+    "version": "1.4.3"
   },
   {
     "package": "@posthog/react-rrweb-player",
-    "version": "1.1.4",
-    "weeklyDownloads": 4062
+    "version": "1.1.4"
   },
   {
     "package": "@asyncapi/markdown-template",
-    "version": "1.6.8",
-    "weeklyDownloads": 3630
+    "version": "1.6.8"
   },
   {
     "package": "@asyncapi/markdown-template",
-    "version": "1.6.9",
-    "weeklyDownloads": 3630
+    "version": "1.6.9"
   },
   {
     "package": "@ensdomains/buffer",
-    "version": "0.1.2",
-    "weeklyDownloads": 3493
+    "version": "0.1.2"
   },
   {
     "package": "@postman/node-keytar",
-    "version": "7.9.4",
-    "weeklyDownloads": 3453
+    "version": "7.9.4"
   },
   {
     "package": "@postman/node-keytar",
-    "version": "7.9.5",
-    "weeklyDownloads": 3453
+    "version": "7.9.5"
   },
   {
     "package": "@postman/node-keytar",
-    "version": "7.9.6",
-    "weeklyDownloads": 3453
+    "version": "7.9.6"
   },
   {
     "package": "@mcp-use/inspector",
-    "version": "0.6.2",
-    "weeklyDownloads": 3439
+    "version": "0.6.2"
   },
   {
     "package": "@mcp-use/inspector",
-    "version": "0.6.3",
-    "weeklyDownloads": 3439
+    "version": "0.6.3"
   },
   {
     "package": "@mcp-use/cli",
-    "version": "2.2.6",
-    "weeklyDownloads": 3327
+    "version": "2.2.6"
   },
   {
     "package": "@zapier/spectral-api-ruleset",
-    "version": "1.9.1",
-    "weeklyDownloads": 3209
+    "version": "1.9.1"
   },
   {
     "package": "@zapier/spectral-api-ruleset",
-    "version": "1.9.2",
-    "weeklyDownloads": 3209
+    "version": "1.9.2"
   },
   {
     "package": "@zapier/spectral-api-ruleset",
-    "version": "1.9.3",
-    "weeklyDownloads": 3209
+    "version": "1.9.3"
   },
   {
     "package": "@posthog/geoip-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 3051
+    "version": "0.0.8"
   },
   {
     "package": "@ensdomains/dnsprovejs",
-    "version": "0.5.3",
-    "weeklyDownloads": 2908
+    "version": "0.5.3"
   },
   {
     "package": "@ensdomains/solsha1",
-    "version": "0.0.4",
-    "weeklyDownloads": 2893
+    "version": "0.0.4"
   },
   {
     "package": "@asyncapi/web-component",
-    "version": "2.6.6",
-    "weeklyDownloads": 2689
+    "version": "2.6.6"
   },
   {
     "package": "@asyncapi/web-component",
-    "version": "2.6.7",
-    "weeklyDownloads": 2689
+    "version": "2.6.7"
   },
   {
     "package": "@posthog/nuxt",
-    "version": "1.2.9",
-    "weeklyDownloads": 2362
+    "version": "1.2.9"
   },
   {
     "package": "@zapier/browserslist-config-zapier",
-    "version": "1.0.3",
-    "weeklyDownloads": 1961
+    "version": "1.0.3"
   },
   {
     "package": "@zapier/browserslist-config-zapier",
-    "version": "1.0.5",
-    "weeklyDownloads": 1961
+    "version": "1.0.5"
   },
   {
     "package": "@posthog/wizard",
-    "version": "1.18.1",
-    "weeklyDownloads": 1945
+    "version": "1.18.1"
   },
   {
     "package": "react-native-use-modal",
-    "version": "1.0.3",
-    "weeklyDownloads": 1865
+    "version": "1.0.3"
   },
   {
     "package": "@asyncapi/java-spring-template",
-    "version": "1.6.1",
-    "weeklyDownloads": 1825
+    "version": "1.6.1"
   },
   {
     "package": "@asyncapi/java-spring-template",
-    "version": "1.6.2",
-    "weeklyDownloads": 1825
+    "version": "1.6.2"
   },
   {
     "package": "@posthog/rrweb-record",
-    "version": "0.0.31",
-    "weeklyDownloads": 1761
+    "version": "0.0.31"
   },
   {
     "package": "@posthog/siphash",
-    "version": "1.1.2",
-    "weeklyDownloads": 1742
+    "version": "1.1.2"
   },
   {
     "package": "@posthog/piscina",
-    "version": "3.2.1",
-    "weeklyDownloads": 1741
+    "version": "3.2.1"
   },
   {
     "package": "@ensdomains/ens-validation",
-    "version": "0.1.1",
-    "weeklyDownloads": 1734
+    "version": "0.1.1"
   },
   {
     "package": "@posthog/plugin-contrib",
-    "version": "0.0.6",
-    "weeklyDownloads": 1732
+    "version": "0.0.6"
   },
   {
     "package": "@posthog/agent",
-    "version": "1.24.1",
-    "weeklyDownloads": 1660
+    "version": "1.24.1"
   },
   {
     "package": "@postman/postman-mcp-server",
-    "version": "2.4.11",
-    "weeklyDownloads": 1448
+    "version": "2.4.11"
   },
   {
     "package": "@postman/postman-mcp-server",
-    "version": "2.4.10",
-    "weeklyDownloads": 1448
+    "version": "2.4.10"
   },
   {
     "package": "@asyncapi/nodejs-ws-template",
-    "version": "0.10.1",
-    "weeklyDownloads": 1406
+    "version": "0.10.1"
   },
   {
     "package": "@asyncapi/nodejs-ws-template",
-    "version": "0.10.2",
-    "weeklyDownloads": 1406
+    "version": "0.10.2"
   },
   {
     "package": "@actbase/react-daum-postcode",
-    "version": "1.0.5",
-    "weeklyDownloads": 1221
+    "version": "1.0.5"
   },
   {
     "package": "token.js-fork",
-    "version": "0.7.32",
-    "weeklyDownloads": 1109
+    "version": "0.7.32"
   },
   {
     "package": "@postman/pm-bin-windows-x64",
-    "version": "1.24.5",
-    "weeklyDownloads": 708
+    "version": "1.24.5"
   },
   {
     "package": "@postman/pm-bin-windows-x64",
-    "version": "1.24.4",
-    "weeklyDownloads": 708
+    "version": "1.24.4"
   },
   {
     "package": "@ensdomains/ens-avatar",
-    "version": "1.0.4",
-    "weeklyDownloads": 685
+    "version": "1.0.4"
   },
   {
     "package": "@postman/pm-bin-linux-x64",
-    "version": "1.24.3",
-    "weeklyDownloads": 671
+    "version": "1.24.3"
   },
   {
     "package": "@postman/pm-bin-linux-x64",
-    "version": "1.24.4",
-    "weeklyDownloads": 671
+    "version": "1.24.4"
   },
   {
     "package": "@postman/pm-bin-linux-x64",
-    "version": "1.24.5",
-    "weeklyDownloads": 671
+    "version": "1.24.5"
   },
   {
     "package": "@posthog/hedgehog-mode",
-    "version": "0.0.42",
-    "weeklyDownloads": 635
+    "version": "0.0.42"
   },
   {
     "package": "create-mcp-use-app",
-    "version": "0.5.3",
-    "weeklyDownloads": 521
+    "version": "0.5.3"
   },
   {
     "package": "create-mcp-use-app",
-    "version": "0.5.4",
-    "weeklyDownloads": 521
+    "version": "0.5.4"
   },
   {
     "package": "@postman/pm-bin-macos-arm64",
-    "version": "1.24.5",
-    "weeklyDownloads": 469
+    "version": "1.24.5"
   },
   {
     "package": "@postman/pm-bin-macos-arm64",
-    "version": "1.24.3",
-    "weeklyDownloads": 469
+    "version": "1.24.3"
   },
   {
     "package": "@postman/pm-bin-macos-arm64",
-    "version": "1.24.4",
-    "weeklyDownloads": 469
+    "version": "1.24.4"
   },
   {
     "package": "@posthog/nextjs",
-    "version": "0.0.3",
-    "weeklyDownloads": 401
+    "version": "0.0.3"
   },
   {
     "package": "@postman/pm-bin-macos-x64",
-    "version": "1.24.3",
-    "weeklyDownloads": 337
+    "version": "1.24.3"
   },
   {
     "package": "@postman/pm-bin-macos-x64",
-    "version": "1.24.5",
-    "weeklyDownloads": 337
+    "version": "1.24.5"
   },
   {
     "package": "redux-router-kit",
-    "version": "1.2.2",
-    "weeklyDownloads": 320
+    "version": "1.2.2"
   },
   {
     "package": "redux-router-kit",
-    "version": "1.2.3",
-    "weeklyDownloads": 320
+    "version": "1.2.3"
   },
   {
     "package": "redux-router-kit",
-    "version": "1.2.4",
-    "weeklyDownloads": 320
+    "version": "1.2.4"
   },
   {
     "package": "@ensdomains/dnssecoraclejs",
-    "version": "0.2.9",
-    "weeklyDownloads": 309
+    "version": "0.2.9"
   },
   {
     "package": "@postman/mcp-ui-client",
-    "version": "5.5.1",
-    "weeklyDownloads": 270
+    "version": "5.5.1"
   },
   {
     "package": "@postman/mcp-ui-client",
-    "version": "5.5.2",
-    "weeklyDownloads": 270
+    "version": "5.5.2"
   },
   {
     "package": "@postman/postman-mcp-cli",
-    "version": "1.0.5",
-    "weeklyDownloads": 258
+    "version": "1.0.5"
   },
   {
     "package": "@postman/postman-mcp-cli",
-    "version": "1.0.4",
-    "weeklyDownloads": 258
+    "version": "1.0.4"
   },
   {
     "package": "@zapier/babel-preset-zapier",
-    "version": "6.4.1",
-    "weeklyDownloads": 256
+    "version": "6.4.1"
   },
   {
     "package": "@zapier/babel-preset-zapier",
-    "version": "6.4.3",
-    "weeklyDownloads": 256
+    "version": "6.4.3"
   },
   {
     "package": "@ensdomains/thorin",
-    "version": "0.6.51",
-    "weeklyDownloads": 213
+    "version": "0.6.51"
   },
   {
     "package": "@postman/postman-collection-fork",
-    "version": "4.3.3",
-    "weeklyDownloads": 195
+    "version": "4.3.3"
   },
   {
     "package": "@postman/postman-collection-fork",
-    "version": "4.3.4",
-    "weeklyDownloads": 195
+    "version": "4.3.4"
   },
   {
     "package": "@postman/postman-collection-fork",
-    "version": "4.3.5",
-    "weeklyDownloads": 195
+    "version": "4.3.5"
   },
   {
     "package": "@asyncapi/nodejs-template",
-    "version": "3.0.5",
-    "weeklyDownloads": 187
+    "version": "3.0.5"
   },
   {
     "package": "@postman/wdio-allure-reporter",
-    "version": "0.0.9",
-    "weeklyDownloads": 183
+    "version": "0.0.9"
   },
   {
     "package": "@postman/wdio-junit-reporter",
-    "version": "0.0.4",
-    "weeklyDownloads": 181
+    "version": "0.0.4"
   },
   {
     "package": "@postman/wdio-junit-reporter",
-    "version": "0.0.6",
-    "weeklyDownloads": 181
+    "version": "0.0.6"
   },
   {
     "package": "@postman/final-node-keytar",
-    "version": "7.9.1",
-    "weeklyDownloads": 175
+    "version": "7.9.1"
   },
   {
     "package": "@postman/final-node-keytar",
-    "version": "7.9.2",
-    "weeklyDownloads": 175
+    "version": "7.9.2"
   },
   {
     "package": "zapier-async-storage",
-    "version": "1.0.1",
-    "weeklyDownloads": 163
+    "version": "1.0.1"
   },
   {
     "package": "zapier-async-storage",
-    "version": "1.0.2",
-    "weeklyDownloads": 163
+    "version": "1.0.2"
   },
   {
     "package": "zapier-async-storage",
-    "version": "1.0.3",
-    "weeklyDownloads": 163
+    "version": "1.0.3"
   },
   {
     "package": "@ensdomains/test-utils",
-    "version": "1.3.1",
-    "weeklyDownloads": 153
+    "version": "1.3.1"
   },
   {
     "package": "@ensdomains/hardhat-chai-matchers-viem",
-    "version": "0.1.15",
-    "weeklyDownloads": 148
+    "version": "0.1.15"
   },
   {
     "package": "@asyncapi/java-spring-cloud-stream-template",
-    "version": "0.13.5",
-    "weeklyDownloads": 147
+    "version": "0.13.5"
   },
   {
     "package": "@asyncapi/java-spring-cloud-stream-template",
-    "version": "0.13.6",
-    "weeklyDownloads": 147
+    "version": "0.13.6"
   },
   {
     "package": "@zapier/eslint-plugin-zapier",
-    "version": "11.0.3",
-    "weeklyDownloads": 147
+    "version": "11.0.3"
   },
   {
     "package": "@zapier/eslint-plugin-zapier",
-    "version": "11.0.4",
-    "weeklyDownloads": 147
+    "version": "11.0.4"
   },
   {
     "package": "@zapier/eslint-plugin-zapier",
-    "version": "11.0.5",
-    "weeklyDownloads": 147
+    "version": "11.0.5"
   },
   {
     "package": "devstart-cli",
-    "version": "1.0.6",
-    "weeklyDownloads": 143
+    "version": "1.0.6"
   },
   {
     "package": "@asyncapi/java-template",
-    "version": "0.3.5",
-    "weeklyDownloads": 129
+    "version": "0.3.5"
   },
   {
     "package": "@asyncapi/java-template",
-    "version": "0.3.6",
-    "weeklyDownloads": 129
+    "version": "0.3.6"
   },
   {
     "package": "@asyncapi/go-watermill-template",
-    "version": "0.2.76",
-    "weeklyDownloads": 119
+    "version": "0.2.76"
   },
   {
     "package": "@asyncapi/go-watermill-template",
-    "version": "0.2.77",
-    "weeklyDownloads": 119
+    "version": "0.2.77"
   },
   {
     "package": "@asyncapi/python-paho-template",
-    "version": "0.2.14",
-    "weeklyDownloads": 112
+    "version": "0.2.14"
   },
   {
     "package": "@asyncapi/python-paho-template",
-    "version": "0.2.15",
-    "weeklyDownloads": 112
+    "version": "0.2.15"
   },
   {
     "package": "@ensdomains/hardhat-toolbox-viem-extended",
-    "version": "0.0.6",
-    "weeklyDownloads": 106
+    "version": "0.0.6"
   },
   {
     "package": "@ensdomains/vite-plugin-i18next-loader",
-    "version": "4.0.4",
-    "weeklyDownloads": 104
+    "version": "4.0.4"
   },
   {
     "package": "zapier-platform-legacy-scripting-runner",
-    "version": "4.0.3",
-    "weeklyDownloads": 103
+    "version": "4.0.3"
   },
   {
     "package": "zapier-platform-legacy-scripting-runner",
-    "version": "4.0.4",
-    "weeklyDownloads": 103
+    "version": "4.0.4"
   },
   {
     "package": "@asyncapi/server-api",
-    "version": "0.16.25",
-    "weeklyDownloads": 91
+    "version": "0.16.25"
   },
   {
     "package": "@ensdomains/offchain-resolver-contracts",
-    "version": "0.2.2",
-    "weeklyDownloads": 88
+    "version": "0.2.2"
   },
   {
     "package": "@zapier/ai-actions",
-    "version": "0.1.18",
-    "weeklyDownloads": 81
+    "version": "0.1.18"
   },
   {
     "package": "@zapier/ai-actions",
-    "version": "0.1.19",
-    "weeklyDownloads": 81
+    "version": "0.1.19"
   },
   {
     "package": "@zapier/ai-actions",
-    "version": "0.1.20",
-    "weeklyDownloads": 81
+    "version": "0.1.20"
   },
   {
     "package": "@zapier/mcp-integration",
-    "version": "3.0.1",
-    "weeklyDownloads": 74
+    "version": "3.0.1"
   },
   {
     "package": "@zapier/mcp-integration",
-    "version": "3.0.3",
-    "weeklyDownloads": 74
+    "version": "3.0.3"
   },
   {
     "package": "@ensdomains/ens-archived-contracts",
-    "version": "0.0.3",
-    "weeklyDownloads": 73
+    "version": "0.0.3"
   },
   {
     "package": "@ensdomains/dnssec-oracle-anchors",
-    "version": "0.0.2",
-    "weeklyDownloads": 72
+    "version": "0.0.2"
   },
   {
     "package": "@ensdomains/mock",
-    "version": "2.1.52",
-    "weeklyDownloads": 66
+    "version": "2.1.52"
   },
   {
     "package": "zapier-scripts",
-    "version": "7.8.3",
-    "weeklyDownloads": 65
+    "version": "7.8.3"
   },
   {
     "package": "zapier-scripts",
-    "version": "7.8.4",
-    "weeklyDownloads": 65
+    "version": "7.8.4"
   },
   {
     "package": "@quick-start-soft/quick-task-refine",
-    "version": "1.4.2511142126",
-    "weeklyDownloads": 56
+    "version": "1.4.2511142126"
   },
   {
     "package": "@zapier/ai-actions-react",
-    "version": "0.1.13",
-    "weeklyDownloads": 54
+    "version": "0.1.13"
   },
   {
     "package": "@zapier/ai-actions-react",
-    "version": "0.1.14",
-    "weeklyDownloads": 54
+    "version": "0.1.14"
   },
   {
     "package": "@quick-start-soft/quick-git-clean-markdown",
-    "version": "1.4.2511142126",
-    "weeklyDownloads": 49
+    "version": "1.4.2511142126"
   },
   {
     "package": "@ensdomains/ui",
-    "version": "3.4.6",
-    "weeklyDownloads": 49
+    "version": "3.4.6"
   },
   {
     "package": "@quick-start-soft/quick-markdown",
-    "version": "1.4.2511142126",
-    "weeklyDownloads": 47
+    "version": "1.4.2511142126"
   },
   {
     "package": "@zapier/stubtree",
-    "version": "0.1.3",
-    "weeklyDownloads": 46
+    "version": "0.1.3"
   },
   {
     "package": "@ensdomains/unruggable-gateways",
-    "version": "0.0.3",
-    "weeklyDownloads": 30
+    "version": "0.0.3"
   },
   {
     "package": "@posthog/rrweb-player",
-    "version": "0.0.31",
-    "weeklyDownloads": 26
+    "version": "0.0.31"
   },
   {
     "package": "@asyncapi/dotnet-rabbitmq-template",
-    "version": "1.0.1",
-    "weeklyDownloads": 25
+    "version": "1.0.1"
   },
   {
     "package": "@asyncapi/dotnet-rabbitmq-template",
-    "version": "1.0.2",
-    "weeklyDownloads": 25
+    "version": "1.0.2"
   },
   {
     "package": "@ensdomains/react-ens-address",
-    "version": "0.0.32",
-    "weeklyDownloads": 24
+    "version": "0.0.32"
   },
   {
     "package": "@asyncapi/php-template",
-    "version": "0.1.1",
-    "weeklyDownloads": 21
+    "version": "0.1.1"
   },
   {
     "package": "@quick-start-soft/quick-document-translator",
-    "version": "1.4.2511142126",
-    "weeklyDownloads": 20
+    "version": "1.4.2511142126"
   },
   {
     "package": "@quick-start-soft/quick-markdown-image",
-    "version": "1.4.2511142126",
-    "weeklyDownloads": 20
+    "version": "1.4.2511142126"
   },
   {
     "package": "@strapbuild/react-native-date-time-picker",
-    "version": "2.0.4",
-    "weeklyDownloads": 17
+    "version": "2.0.4"
   },
   {
     "package": "github-action-for-generator",
-    "version": "2.1.28",
-    "weeklyDownloads": 17
+    "version": "2.1.28"
   },
   {
     "package": "@actbase/react-kakaosdk",
-    "version": "0.9.27",
-    "weeklyDownloads": 16
+    "version": "0.9.27"
   },
   {
     "package": "bytecode-checker-cli",
-    "version": "1.0.8",
-    "weeklyDownloads": 16
+    "version": "1.0.8"
   },
   {
     "package": "@markvivanco/app-version-checker",
-    "version": "1.0.1",
-    "weeklyDownloads": 16
+    "version": "1.0.1"
   },
   {
     "package": "bytecode-checker-cli",
-    "version": "1.0.9",
-    "weeklyDownloads": 16
+    "version": "1.0.9"
   },
   {
     "package": "@markvivanco/app-version-checker",
-    "version": "1.0.2",
-    "weeklyDownloads": 16
+    "version": "1.0.2"
   },
   {
     "package": "bytecode-checker-cli",
-    "version": "1.0.10",
-    "weeklyDownloads": 16
+    "version": "1.0.10"
   },
   {
     "package": "@louisle2/cortex-js",
-    "version": "0.1.6",
-    "weeklyDownloads": 16
+    "version": "0.1.6"
   },
   {
     "package": "orbit-boxicons",
-    "version": "2.1.3",
-    "weeklyDownloads": 16
+    "version": "2.1.3"
   },
   {
     "package": "react-native-worklet-functions",
-    "version": "3.3.3",
-    "weeklyDownloads": 15
+    "version": "3.3.3"
   },
   {
     "package": "poper-react-sdk",
-    "version": "0.1.2",
-    "weeklyDownloads": 13
+    "version": "0.1.2"
   },
   {
     "package": "@ensdomains/web3modal",
-    "version": "1.10.2",
-    "weeklyDownloads": 13
+    "version": "1.10.2"
   },
   {
     "package": "gate-evm-tools-test",
-    "version": "1.0.5",
-    "weeklyDownloads": 12
+    "version": "1.0.5"
   },
   {
     "package": "n8n-nodes-tmdb",
-    "version": "0.5.1",
-    "weeklyDownloads": 12
+    "version": "0.5.1"
   },
   {
     "package": "gate-evm-tools-test",
-    "version": "1.0.6",
-    "weeklyDownloads": 12
+    "version": "1.0.6"
   },
   {
     "package": "gate-evm-tools-test",
-    "version": "1.0.7",
-    "weeklyDownloads": 12
+    "version": "1.0.7"
   },
   {
     "package": "capacitor-plugin-purchase",
-    "version": "0.1.1",
-    "weeklyDownloads": 11
+    "version": "0.1.1"
   },
   {
     "package": "expo-audio-session",
-    "version": "0.2.1",
-    "weeklyDownloads": 9
+    "version": "0.2.1"
   },
   {
     "package": "capacitor-plugin-apptrackingios",
-    "version": "0.0.21",
-    "weeklyDownloads": 9
+    "version": "0.0.21"
   },
   {
     "package": "asyncapi-preview",
-    "version": "1.0.1",
-    "weeklyDownloads": 8
+    "version": "1.0.1"
   },
   {
     "package": "asyncapi-preview",
-    "version": "1.0.2",
-    "weeklyDownloads": 8
+    "version": "1.0.2"
   },
   {
     "package": "@actbase/react-absolute",
-    "version": "0.8.3",
-    "weeklyDownloads": 8
+    "version": "0.8.3"
   },
   {
     "package": "@actbase/react-native-devtools",
-    "version": "0.1.3",
-    "weeklyDownloads": 8
+    "version": "0.1.3"
   },
   {
     "package": "@posthog/variance-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 7
+    "version": "0.0.8"
   },
   {
     "package": "@posthog/twitter-followers-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 6
+    "version": "0.0.8"
   },
   {
     "package": "medusa-plugin-momo",
-    "version": "0.0.68",
-    "weeklyDownloads": 6
+    "version": "0.0.68"
   },
   {
     "package": "scgs-capacitor-subscribe",
-    "version": "1.0.11",
-    "weeklyDownloads": 6
+    "version": "1.0.11"
   },
   {
     "package": "gate-evm-check-code2",
-    "version": "2.0.3",
-    "weeklyDownloads": 6
+    "version": "2.0.3"
   },
   {
     "package": "gate-evm-check-code2",
-    "version": "2.0.4",
-    "weeklyDownloads": 6
+    "version": "2.0.4"
   },
   {
     "package": "gate-evm-check-code2",
-    "version": "2.0.5",
-    "weeklyDownloads": 6
+    "version": "2.0.5"
   },
   {
     "package": "lite-serper-mcp-server",
-    "version": "0.2.2",
-    "weeklyDownloads": 6
+    "version": "0.2.2"
   },
   {
     "package": "@asyncapi/edavisualiser",
-    "version": "1.2.1",
-    "weeklyDownloads": 5
+    "version": "1.2.1"
   },
   {
     "package": "@asyncapi/edavisualiser",
-    "version": "1.2.2",
-    "weeklyDownloads": 5
+    "version": "1.2.2"
   },
   {
     "package": "esbuild-plugin-eta",
-    "version": "0.1.1",
-    "weeklyDownloads": 5
+    "version": "0.1.1"
   },
   {
     "package": "@ensdomains/server-analytics",
-    "version": "0.0.2",
-    "weeklyDownloads": 5
+    "version": "0.0.2"
   },
   {
     "package": "zuper-stream",
-    "version": "2.0.9",
-    "weeklyDownloads": 5
+    "version": "2.0.9"
   },
   {
     "package": "@quick-start-soft/quick-markdown-compose",
-    "version": "1.4.2506300029",
-    "weeklyDownloads": 4
+    "version": "1.4.2506300029"
   },
   {
     "package": "@posthog/snowflake-export-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 4
+    "version": "0.0.8"
   },
   {
     "package": "@actbase/react-native-kakao-channel",
-    "version": "1.0.2",
-    "weeklyDownloads": 4
+    "version": "1.0.2"
   },
   {
     "package": "@posthog/sendgrid-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 4
+    "version": "0.0.8"
   },
   {
     "package": "evm-checkcode-cli",
-    "version": "1.0.12",
-    "weeklyDownloads": 4
+    "version": "1.0.12"
   },
   {
     "package": "@ensdomains/subdomain-registrar",
-    "version": "0.2.4",
-    "weeklyDownloads": 4
+    "version": "0.2.4"
   },
   {
     "package": "claude-token-updater",
-    "version": "1.0.3",
-    "weeklyDownloads": 4
+    "version": "1.0.3"
   },
   {
     "package": "evm-checkcode-cli",
-    "version": "1.0.13",
-    "weeklyDownloads": 4
+    "version": "1.0.13"
   },
   {
     "package": "evm-checkcode-cli",
-    "version": "1.0.14",
-    "weeklyDownloads": 4
+    "version": "1.0.14"
   },
   {
     "package": "@trigo/atrix-pubsub",
-    "version": "4.0.3",
-    "weeklyDownloads": 4
+    "version": "4.0.3"
   },
   {
     "package": "@trigo/hapi-auth-signedlink",
-    "version": "1.3.1",
-    "weeklyDownloads": 4
+    "version": "1.3.1"
   },
   {
     "package": "@strapbuild/react-native-perspective-image-cropper-poojan31",
-    "version": "0.4.6",
-    "weeklyDownloads": 3
+    "version": "0.4.6"
   },
   {
     "package": "axios-builder",
-    "version": "1.2.1",
-    "weeklyDownloads": 3
+    "version": "1.2.1"
   },
   {
     "package": "calc-loan-interest",
-    "version": "1.0.4",
-    "weeklyDownloads": 3
+    "version": "1.0.4"
   },
   {
     "package": "medusa-plugin-announcement",
-    "version": "0.0.3",
-    "weeklyDownloads": 3
+    "version": "0.0.3"
   },
   {
     "package": "open2internet",
-    "version": "0.1.1",
-    "weeklyDownloads": 3
+    "version": "0.1.1"
   },
   {
     "package": "@ensdomains/cypress-metamask",
-    "version": "1.2.1",
-    "weeklyDownloads": 3
+    "version": "1.2.1"
   },
   {
     "package": "@ensdomains/renewal",
-    "version": "0.0.13",
-    "weeklyDownloads": 3
+    "version": "0.0.13"
   },
   {
     "package": "cpu-instructions",
-    "version": "0.0.14",
-    "weeklyDownloads": 3
+    "version": "0.0.14"
   },
   {
     "package": "orbit-soap",
-    "version": "0.43.13",
-    "weeklyDownloads": 3
+    "version": "0.43.13"
   },
   {
     "package": "@asyncapi/keeper",
-    "version": "0.0.2",
-    "weeklyDownloads": 2
+    "version": "0.0.2"
   },
   {
     "package": "@strapbuild/react-native-perspective-image-cropper-2",
-    "version": "0.4.7",
-    "weeklyDownloads": 2
+    "version": "0.4.7"
   },
   {
     "package": "@actbase/react-native-actionsheet",
-    "version": "1.0.3",
-    "weeklyDownloads": 2
+    "version": "1.0.3"
   },
   {
     "package": "@posthog/ingestion-alert-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 2
+    "version": "0.0.8"
   },
   {
     "package": "@actbase/react-native-simple-video",
-    "version": "1.0.13",
-    "weeklyDownloads": 2
+    "version": "1.0.13"
   },
   {
     "package": "@actbase/react-native-kakao-navi",
-    "version": "2.0.4",
-    "weeklyDownloads": 2
+    "version": "2.0.4"
   },
   {
     "package": "medusa-plugin-zalopay",
-    "version": "0.0.40",
-    "weeklyDownloads": 2
+    "version": "0.0.40"
   },
   {
     "package": "@kvytech/medusa-plugin-newsletter",
-    "version": "0.0.5",
-    "weeklyDownloads": 2
+    "version": "0.0.5"
   },
   {
     "package": "@posthog/databricks-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 2
+    "version": "0.0.8"
   },
   {
     "package": "@asyncapi/keeper",
-    "version": "0.0.3",
-    "weeklyDownloads": 2
+    "version": "0.0.3"
   },
   {
     "package": "capacitor-voice-recorder-wav",
-    "version": "6.0.3",
-    "weeklyDownloads": 2
+    "version": "6.0.3"
   },
   {
     "package": "create-hardhat3-app",
-    "version": "1.1.1",
-    "weeklyDownloads": 2
+    "version": "1.1.1"
   },
   {
     "package": "rollup-plugin-httpfile",
-    "version": "0.2.1",
-    "weeklyDownloads": 2
+    "version": "0.2.1"
   },
   {
     "package": "@ensdomains/name-wrapper",
-    "version": "1.0.1",
-    "weeklyDownloads": 2
+    "version": "1.0.1"
   },
   {
     "package": "create-hardhat3-app",
-    "version": "1.1.2",
-    "weeklyDownloads": 2
+    "version": "1.1.2"
   },
   {
     "package": "test-foundry-app",
-    "version": "1.0.3",
-    "weeklyDownloads": 2
+    "version": "1.0.3"
   },
   {
     "package": "jan-browser",
-    "version": "0.13.1",
-    "weeklyDownloads": 2
+    "version": "0.13.1"
   },
   {
     "package": "@mparpaillon/page",
-    "version": "1.0.1",
-    "weeklyDownloads": 2
+    "version": "1.0.1"
   },
   {
     "package": "go-template",
-    "version": "0.1.8",
-    "weeklyDownloads": 1
+    "version": "0.1.8"
   },
   {
     "package": "@strapbuild/react-native-perspective-image-cropper",
-    "version": "0.4.15",
-    "weeklyDownloads": 1
+    "version": "0.4.15"
   },
   {
     "package": "manual-billing-system-miniapp-api",
-    "version": "1.3.1",
-    "weeklyDownloads": 1
+    "version": "1.3.1"
   },
   {
     "package": "korea-administrative-area-geo-json-util",
-    "version": "1.0.7",
-    "weeklyDownloads": 1
+    "version": "1.0.7"
   },
   {
     "package": "@posthog/currency-normalization-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "@posthog/web-dev-server",
-    "version": "1.0.5",
-    "weeklyDownloads": 1
+    "version": "1.0.5"
   },
   {
     "package": "@posthog/pagerduty-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "@posthog/event-sequence-timer-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "@posthog/automatic-cohorts-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "@posthog/first-time-event-tracker",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "@actbase/css-to-react-native-transform",
-    "version": "1.0.3",
-    "weeklyDownloads": 1
+    "version": "1.0.3"
   },
   {
     "package": "@posthog/url-normalizer-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "@posthog/twilio-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "@actbase/node-server",
-    "version": "1.1.19",
-    "weeklyDownloads": 1
+    "version": "1.1.19"
   },
   {
     "package": "@posthog/gitub-star-sync-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "@seung-ju/react-native-action-sheet",
-    "version": "0.2.1",
-    "weeklyDownloads": 1
+    "version": "0.2.1"
   },
   {
     "package": "@posthog/maxmind-plugin",
-    "version": "0.1.6",
-    "weeklyDownloads": 1
+    "version": "0.1.6"
   },
   {
     "package": "@posthog/github-release-tracking-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "@actbase/react-native-fast-image",
-    "version": "8.5.13",
-    "weeklyDownloads": 1
+    "version": "8.5.13"
   },
   {
     "package": "@posthog/customerio-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "@posthog/kinesis-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "@actbase/react-native-less-transformer",
-    "version": "1.0.6",
-    "weeklyDownloads": 1
+    "version": "1.0.6"
   },
   {
     "package": "@posthog/taxonomy-plugin",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "medusa-plugin-product-reviews-kvy",
-    "version": "0.0.4",
-    "weeklyDownloads": 1
+    "version": "0.0.4"
   },
   {
     "package": "@aryanhussain/my-angular-lib",
-    "version": "0.0.23",
-    "weeklyDownloads": 1
+    "version": "0.0.23"
   },
   {
     "package": "dotnet-template",
-    "version": "0.0.4",
-    "weeklyDownloads": 1
+    "version": "0.0.4"
   },
   {
     "package": "capacitor-plugin-scgssigninwithgoogle",
-    "version": "0.0.5",
-    "weeklyDownloads": 1
+    "version": "0.0.5"
   },
   {
     "package": "capacitor-purchase-history",
-    "version": "0.0.10",
-    "weeklyDownloads": 1
+    "version": "0.0.10"
   },
   {
     "package": "@posthog/plugin-unduplicates",
-    "version": "0.0.8",
-    "weeklyDownloads": 1
+    "version": "0.0.8"
   },
   {
     "package": "posthog-plugin-hello-world",
-    "version": "1.0.1",
-    "weeklyDownloads": 1
+    "version": "1.0.1"
   },
   {
     "package": "esbuild-plugin-httpfile",
-    "version": "0.4.1",
-    "weeklyDownloads": 1
+    "version": "0.4.1"
   },
   {
     "package": "@ensdomains/blacklist",
-    "version": "1.0.1",
-    "weeklyDownloads": 1
+    "version": "1.0.1"
   },
   {
     "package": "@ensdomains/renewal-widget",
-    "version": "0.1.10",
-    "weeklyDownloads": 1
+    "version": "0.1.10"
   },
   {
     "package": "@ensdomains/hackathon-registrar",
-    "version": "1.0.5",
-    "weeklyDownloads": 1
+    "version": "1.0.5"
   },
   {
     "package": "@ensdomains/ccip-read-router",
-    "version": "0.0.7",
-    "weeklyDownloads": 1
+    "version": "0.0.7"
   },
   {
     "package": "@mcp-use/mcp-use",
-    "version": "1.0.1",
-    "weeklyDownloads": 1
+    "version": "1.0.1"
   },
   {
     "package": "test-hardhat-app",
-    "version": "1.0.3",
-    "weeklyDownloads": 1
+    "version": "1.0.3"
   },
   {
     "package": "zuper-cli",
-    "version": "1.0.1",
-    "weeklyDownloads": 1
+    "version": "1.0.1"
   },
   {
     "package": "skills-use",
-    "version": "0.1.2",
-    "weeklyDownloads": 1
+    "version": "0.1.2"
   },
   {
     "package": "typeorm-orbit",
-    "version": "0.2.27",
-    "weeklyDownloads": 1
+    "version": "0.2.27"
   },
   {
     "package": "orbit-nebula-editor",
-    "version": "1.0.2",
-    "weeklyDownloads": 1
+    "version": "1.0.2"
   },
   {
     "package": "@trigo/atrix-elasticsearch",
-    "version": "2.0.1",
-    "weeklyDownloads": 1
+    "version": "2.0.1"
   },
   {
     "package": "@trigo/atrix-soap",
-    "version": "1.0.2",
-    "weeklyDownloads": 1
+    "version": "1.0.2"
   },
   {
     "package": "eslint-config-zeallat-base",
-    "version": "1.0.4",
-    "weeklyDownloads": 0
+    "version": "1.0.4"
   },
   {
     "package": "iron-shield-miniapp",
-    "version": "0.0.2",
-    "weeklyDownloads": 0
+    "version": "0.0.2"
   },
   {
     "package": "shinhan-limit-scrap",
-    "version": "1.0.3",
-    "weeklyDownloads": 0
+    "version": "1.0.3"
   },
   {
     "package": "create-glee-app",
-    "version": "0.2.3",
-    "weeklyDownloads": 0
+    "version": "0.2.3"
   },
   {
     "package": "@seung-ju/next",
-    "version": "0.0.2",
-    "weeklyDownloads": 0
+    "version": "0.0.2"
   },
   {
     "package": "@actbase/react-native-tiktok",
-    "version": "1.1.3",
-    "weeklyDownloads": 0
+    "version": "1.1.3"
   },
   {
     "package": "discord-bot-server",
-    "version": "0.1.2",
-    "weeklyDownloads": 0
+    "version": "0.1.2"
   },
   {
     "package": "@seung-ju/openapi-generator",
-    "version": "0.0.4",
-    "weeklyDownloads": 0
+    "version": "0.0.4"
   },
   {
     "package": "@seung-ju/react-hooks",
-    "version": "0.0.2",
-    "weeklyDownloads": 0
+    "version": "0.0.2"
   },
   {
     "package": "@actbase/react-native-naver-login",
-    "version": "1.0.1",
-    "weeklyDownloads": 0
+    "version": "1.0.1"
   },
   {
     "package": "@kvytech/medusa-plugin-announcement",
-    "version": "0.0.8",
-    "weeklyDownloads": 0
+    "version": "0.0.8"
   },
   {
     "package": "@kvytech/components",
-    "version": "0.0.2",
-    "weeklyDownloads": 0
+    "version": "0.0.2"
   },
   {
     "package": "@kvytech/cli",
-    "version": "0.0.7",
-    "weeklyDownloads": 0
+    "version": "0.0.7"
   },
   {
     "package": "@kvytech/medusa-plugin-management",
-    "version": "0.0.5",
-    "weeklyDownloads": 0
+    "version": "0.0.5"
   },
   {
     "package": "@kvytech/medusa-plugin-product-reviews",
-    "version": "0.0.9",
-    "weeklyDownloads": 0
+    "version": "0.0.9"
   },
   {
     "package": "@kvytech/web",
-    "version": "0.0.2",
-    "weeklyDownloads": 0
+    "version": "0.0.2"
   },
   {
     "package": "scgsffcreator",
-    "version": "1.0.5",
-    "weeklyDownloads": 0
+    "version": "1.0.5"
   },
   {
     "package": "vite-plugin-httpfile",
-    "version": "0.2.1",
-    "weeklyDownloads": 0
+    "version": "0.2.1"
   },
   {
     "package": "@ensdomains/curvearithmetics",
-    "version": "1.0.1",
-    "weeklyDownloads": 0
+    "version": "1.0.1"
   },
   {
     "package": "@ensdomains/reverse-records",
-    "version": "1.0.1",
-    "weeklyDownloads": 0
+    "version": "1.0.1"
   },
   {
     "package": "@ensdomains/ccip-read-dns-gateway",
-    "version": "0.1.1",
-    "weeklyDownloads": 0
+    "version": "0.1.1"
   },
   {
     "package": "@ensdomains/unicode-confusables",
-    "version": "0.1.1",
-    "weeklyDownloads": 0
+    "version": "0.1.1"
   },
   {
     "package": "@ensdomains/durin-middleware",
-    "version": "0.0.2",
-    "weeklyDownloads": 0
+    "version": "0.0.2"
   },
   {
     "package": "@ensdomains/ccip-read-worker-viem",
-    "version": "0.0.4",
-    "weeklyDownloads": 0
+    "version": "0.0.4"
   },
   {
     "package": "atrix",
-    "version": "1.0.1",
-    "weeklyDownloads": 0
+    "version": "1.0.1"
   },
   {
     "package": "@caretive/caret-cli",
-    "version": "0.0.2",
-    "weeklyDownloads": -1
+    "version": "0.0.2"
   },
   {
     "package": "exact-ticker",
-    "version": "0.3.5",
-    "weeklyDownloads": -1
+    "version": "0.3.5"
   },
   {
     "package": "@orbitgtbelgium/orbit-components",
-    "version": "1.2.9",
-    "weeklyDownloads": -1
+    "version": "1.2.9"
   },
   {
     "package": "react-library-setup",
-    "version": "0.0.6",
-    "weeklyDownloads": -1
+    "version": "0.0.6"
   },
   {
     "package": "@orbitgtbelgium/mapbox-gl-draw-scale-rotate-mode",
-    "version": "1.1.1",
-    "weeklyDownloads": -1
+    "version": "1.1.1"
   },
   {
     "package": "orbit-nebula-draw-tools",
-    "version": "1.0.10",
-    "weeklyDownloads": -1
+    "version": "1.0.10"
   },
   {
     "package": "@orbitgtbelgium/time-slider",
-    "version": "1.0.187",
-    "weeklyDownloads": -1
+    "version": "1.0.187"
   },
   {
     "package": "react-element-prompt-inspector",
-    "version": "0.1.18",
-    "weeklyDownloads": -1
+    "version": "0.1.18"
   },
   {
     "package": "@trigo/pathfinder-ui-css",
-    "version": "0.1.1",
-    "weeklyDownloads": -1
+    "version": "0.1.1"
   },
   {
     "package": "eslint-config-trigo",
-    "version": "22.0.2",
-    "weeklyDownloads": -1
+    "version": "22.0.2"
   },
   {
     "package": "@trigo/fsm",
-    "version": "3.4.2",
-    "weeklyDownloads": -1
+    "version": "3.4.2"
   },
   {
     "package": "@trigo/atrix",
-    "version": "7.0.1",
-    "weeklyDownloads": -1
+    "version": "7.0.1"
   },
   {
     "package": "@trigo/atrix-postgres",
-    "version": "1.0.3",
-    "weeklyDownloads": -1
+    "version": "1.0.3"
   },
   {
     "package": "trigo-react-app",
-    "version": "4.1.2",
-    "weeklyDownloads": -1
+    "version": "4.1.2"
   },
   {
     "package": "@trigo/eslint-config-trigo",
-    "version": "3.3.1",
-    "weeklyDownloads": -1
+    "version": "3.3.1"
   },
   {
     "package": "@trigo/bool-expressions",
-    "version": "4.1.3",
-    "weeklyDownloads": -1
+    "version": "4.1.3"
   },
   {
     "package": "@trigo/trigo-hapijs",
-    "version": "5.0.1",
-    "weeklyDownloads": -1
+    "version": "5.0.1"
   },
   {
     "package": "@trigo/node-soap",
-    "version": "0.5.4",
-    "weeklyDownloads": -1
+    "version": "0.5.4"
   },
   {
     "package": "@trigo/jsdt",
-    "version": "0.2.1",
-    "weeklyDownloads": -1
+    "version": "0.2.1"
   },
   {
     "package": "bool-expressions",
-    "version": "0.1.2",
-    "weeklyDownloads": -1
+    "version": "0.1.2"
   },
   {
     "package": "@trigo/atrix-redis",
-    "version": "1.0.2",
-    "weeklyDownloads": -1
+    "version": "1.0.2"
   },
   {
     "package": "@trigo/atrix-acl",
-    "version": "4.0.2",
-    "weeklyDownloads": -1
+    "version": "4.0.2"
   },
   {
     "package": "@trigo/atrix-orientdb",
-    "version": "1.0.2",
-    "weeklyDownloads": -1
+    "version": "1.0.2"
   },
   {
     "package": "@trigo/atrix-mongoose",
-    "version": "1.0.2",
-    "weeklyDownloads": -1
+    "version": "1.0.2"
   },
   {
     "package": "atrix-mongoose",
-    "version": "1.0.1",
-    "weeklyDownloads": -1
+    "version": "1.0.1"
   },
   {
     "package": "redux-forge",
-    "version": "2.5.3",
-    "weeklyDownloads": -1
+    "version": "2.5.3"
   },
   {
     "package": "@trigo/keycloak-api",
-    "version": "1.3.1",
-    "weeklyDownloads": -1
+    "version": "1.3.1"
   },
   {
     "package": "@mparpaillon/connector-parse",
-    "version": "1.0.1",
-    "weeklyDownloads": -1
+    "version": "1.0.1"
   },
   {
     "package": "@mparpaillon/imagesloaded",
-    "version": "4.1.2",
-    "weeklyDownloads": -1
+    "version": "4.1.2"
   },
   {
     "package": "@alaan/s2s-auth",
-    "version": "2.0.3",
-    "weeklyDownloads": -1
+    "version": "2.0.3"
+  },
+  {
+    "package": "@ahmedhfarag/ngx-perfect-scrollbar",
+    "version": "20.0.20"
+  },
+  {
+    "package": "@ahmedhfarag/ngx-virtual-scroller",
+    "version": "4.0.4"
+  },
+  {
+    "package": "@art-ws/common",
+    "version": "2.0.22"
+  },
+  {
+    "package": "@art-ws/common",
+    "version": "2.0.28"
+  },
+  {
+    "package": "@art-ws/config-eslint",
+    "version": "2.0.4"
+  },
+  {
+    "package": "@art-ws/config-eslint",
+    "version": "2.0.5"
+  },
+  {
+    "package": "@art-ws/config-ts",
+    "version": "2.0.7"
+  },
+  {
+    "package": "@art-ws/config-ts",
+    "version": "2.0.8"
+  },
+  {
+    "package": "@art-ws/db-context",
+    "version": "2.0.21"
+  },
+  {
+    "package": "@art-ws/db-context",
+    "version": "2.0.24"
+  },
+  {
+    "package": "@art-ws/di",
+    "version": "2.0.28"
+  },
+  {
+    "package": "@art-ws/di",
+    "version": "2.0.32"
+  },
+  {
+    "package": "@art-ws/di-node",
+    "version": "2.0.13"
+  },
+  {
+    "package": "@art-ws/eslint",
+    "version": "1.0.5"
+  },
+  {
+    "package": "@art-ws/eslint",
+    "version": "1.0.6"
+  },
+  {
+    "package": "@art-ws/fastify-http-server",
+    "version": "2.0.24"
+  },
+  {
+    "package": "@art-ws/fastify-http-server",
+    "version": "2.0.27"
+  },
+  {
+    "package": "@art-ws/http-server",
+    "version": "2.0.21"
+  },
+  {
+    "package": "@art-ws/http-server",
+    "version": "2.0.25"
+  },
+  {
+    "package": "@art-ws/openapi",
+    "version": "0.1.12"
+  },
+  {
+    "package": "@art-ws/openapi",
+    "version": "0.1.9"
+  },
+  {
+    "package": "@art-ws/package-base",
+    "version": "1.0.5"
+  },
+  {
+    "package": "@art-ws/package-base",
+    "version": "1.0.6"
+  },
+  {
+    "package": "@art-ws/prettier",
+    "version": "1.0.5"
+  },
+  {
+    "package": "@art-ws/prettier",
+    "version": "1.0.6"
+  },
+  {
+    "package": "@art-ws/slf",
+    "version": "2.0.15"
+  },
+  {
+    "package": "@art-ws/slf",
+    "version": "2.0.22"
+  },
+  {
+    "package": "@art-ws/ssl-info",
+    "version": "1.0.10"
+  },
+  {
+    "package": "@art-ws/ssl-info",
+    "version": "1.0.9"
+  },
+  {
+    "package": "@art-ws/web-app",
+    "version": "1.0.3"
+  },
+  {
+    "package": "@art-ws/web-app",
+    "version": "1.0.4"
+  },
+  {
+    "package": "@basic-ui-components-stc/basic-ui-components",
+    "version": "1.0.5"
+  },
+  {
+    "package": "@crowdstrike/commitlint",
+    "version": "8.1.1"
+  },
+  {
+    "package": "@crowdstrike/commitlint",
+    "version": "8.1.2"
+  },
+  {
+    "package": "@crowdstrike/falcon-shoelace",
+    "version": "0.4.1"
+  },
+  {
+    "package": "@crowdstrike/falcon-shoelace",
+    "version": "0.4.2"
+  },
+  {
+    "package": "@crowdstrike/foundry-js",
+    "version": "0.19.1"
+  },
+  {
+    "package": "@crowdstrike/foundry-js",
+    "version": "0.19.2"
+  },
+  {
+    "package": "@crowdstrike/glide-core",
+    "version": "0.34.2"
+  },
+  {
+    "package": "@crowdstrike/glide-core",
+    "version": "0.34.3"
+  },
+  {
+    "package": "@crowdstrike/logscale-dashboard",
+    "version": "1.205.1"
+  },
+  {
+    "package": "@crowdstrike/logscale-dashboard",
+    "version": "1.205.2"
+  },
+  {
+    "package": "@crowdstrike/logscale-file-editor",
+    "version": "1.205.1"
+  },
+  {
+    "package": "@crowdstrike/logscale-file-editor",
+    "version": "1.205.2"
+  },
+  {
+    "package": "@crowdstrike/logscale-parser-edit",
+    "version": "1.205.1"
+  },
+  {
+    "package": "@crowdstrike/logscale-parser-edit",
+    "version": "1.205.2"
+  },
+  {
+    "package": "@crowdstrike/logscale-search",
+    "version": "1.205.1"
+  },
+  {
+    "package": "@crowdstrike/logscale-search",
+    "version": "1.205.2"
+  },
+  {
+    "package": "@crowdstrike/tailwind-toucan-base",
+    "version": "5.0.1"
+  },
+  {
+    "package": "@crowdstrike/tailwind-toucan-base",
+    "version": "5.0.2"
+  },
+  {
+    "package": "@ctrl/deluge",
+    "version": "7.2.1"
+  },
+  {
+    "package": "@ctrl/golang-template",
+    "version": "1.4.2"
+  },
+  {
+    "package": "@ctrl/magnet-link",
+    "version": "4.0.3"
+  },
+  {
+    "package": "@ctrl/ngx-codemirror",
+    "version": "7.0.1"
+  },
+  {
+    "package": "@ctrl/ngx-csv",
+    "version": "6.0.1"
+  },
+  {
+    "package": "@ctrl/ngx-emoji-mart",
+    "version": "9.2.1"
+  },
+  {
+    "package": "@ctrl/ngx-rightclick",
+    "version": "4.0.1"
+  },
+  {
+    "package": "@ctrl/qbittorrent",
+    "version": "9.7.1"
+  },
+  {
+    "package": "@ctrl/react-adsense",
+    "version": "2.0.1"
+  },
+  {
+    "package": "@ctrl/shared-torrent",
+    "version": "6.3.1"
+  },
+  {
+    "package": "@ctrl/tinycolor",
+    "version": "4.1.1"
+  },
+  {
+    "package": "@ctrl/tinycolor",
+    "version": "4.1.2"
+  },
+  {
+    "package": "@ctrl/torrent-file",
+    "version": "4.1.1"
+  },
+  {
+    "package": "@ctrl/ts-base32",
+    "version": "4.0.1"
+  },
+  {
+    "package": "@hestjs/core",
+    "version": "0.2.1"
+  },
+  {
+    "package": "@hestjs/cqrs",
+    "version": "0.1.6"
+  },
+  {
+    "package": "@hestjs/demo",
+    "version": "0.1.2"
+  },
+  {
+    "package": "@hestjs/eslint-config",
+    "version": "0.1.2"
+  },
+  {
+    "package": "@hestjs/logger",
+    "version": "0.1.6"
+  },
+  {
+    "package": "@hestjs/scalar",
+    "version": "0.1.7"
+  },
+  {
+    "package": "@hestjs/validation",
+    "version": "0.1.6"
+  },
+  {
+    "package": "@nativescript-community/arraybuffers",
+    "version": "1.1.6"
+  },
+  {
+    "package": "@nativescript-community/arraybuffers",
+    "version": "1.1.7"
+  },
+  {
+    "package": "@nativescript-community/arraybuffers",
+    "version": "1.1.8"
+  },
+  {
+    "package": "@nativescript-community/perms",
+    "version": "3.0.5"
+  },
+  {
+    "package": "@nativescript-community/perms",
+    "version": "3.0.6"
+  },
+  {
+    "package": "@nativescript-community/perms",
+    "version": "3.0.7"
+  },
+  {
+    "package": "@nativescript-community/perms",
+    "version": "3.0.8"
+  },
+  {
+    "package": "@nativescript-community/perms",
+    "version": "3.0.9"
+  },
+  {
+    "package": "@nativescript-community/sentry",
+    "version": "4.6.43"
+  },
+  {
+    "package": "@nativescript-community/sqlite",
+    "version": "3.5.3"
+  },
+  {
+    "package": "@nativescript-community/sqlite",
+    "version": "3.5.4"
+  },
+  {
+    "package": "@nativescript-community/sqlite",
+    "version": "3.5.5"
+  },
+  {
+    "package": "@nativescript-community/text",
+    "version": "1.6.10"
+  },
+  {
+    "package": "@nativescript-community/text",
+    "version": "1.6.11"
+  },
+  {
+    "package": "@nativescript-community/text",
+    "version": "1.6.12"
+  },
+  {
+    "package": "@nativescript-community/text",
+    "version": "1.6.9"
+  },
+  {
+    "package": "@nativescript-community/typeorm",
+    "version": "0.2.30"
+  },
+  {
+    "package": "@nativescript-community/typeorm",
+    "version": "0.2.31"
+  },
+  {
+    "package": "@nativescript-community/typeorm",
+    "version": "0.2.32"
+  },
+  {
+    "package": "@nativescript-community/typeorm",
+    "version": "0.2.33"
+  },
+  {
+    "package": "@nativescript-community/ui-document-picker",
+    "version": "1.1.27"
+  },
+  {
+    "package": "@nativescript-community/ui-document-picker",
+    "version": "1.1.28"
+  },
+  {
+    "package": "@nativescript-community/ui-label",
+    "version": "1.3.35"
+  },
+  {
+    "package": "@nativescript-community/ui-label",
+    "version": "1.3.36"
+  },
+  {
+    "package": "@nativescript-community/ui-label",
+    "version": "1.3.37"
+  },
+  {
+    "package": "@nativescript-community/ui-material-bottom-navigation",
+    "version": "7.2.72"
+  },
+  {
+    "package": "@nativescript-community/ui-material-bottom-navigation",
+    "version": "7.2.73"
+  },
+  {
+    "package": "@nativescript-community/ui-material-bottom-navigation",
+    "version": "7.2.74"
+  },
+  {
+    "package": "@nativescript-community/ui-material-bottom-navigation",
+    "version": "7.2.75"
+  },
+  {
+    "package": "@nativescript-community/ui-material-core",
+    "version": "7.2.72"
+  },
+  {
+    "package": "@nativescript-community/ui-material-core",
+    "version": "7.2.73"
+  },
+  {
+    "package": "@nativescript-community/ui-material-core",
+    "version": "7.2.74"
+  },
+  {
+    "package": "@nativescript-community/ui-material-core",
+    "version": "7.2.75"
+  },
+  {
+    "package": "@nativescript-community/ui-material-core-tabs",
+    "version": "7.2.72"
+  },
+  {
+    "package": "@nativescript-community/ui-material-core-tabs",
+    "version": "7.2.73"
+  },
+  {
+    "package": "@nativescript-community/ui-material-core-tabs",
+    "version": "7.2.74"
+  },
+  {
+    "package": "@nativescript-community/ui-material-core-tabs",
+    "version": "7.2.75"
+  },
+  {
+    "package": "@nativescript-community/ui-material-ripple",
+    "version": "7.2.72"
+  },
+  {
+    "package": "@nativescript-community/ui-material-ripple",
+    "version": "7.2.73"
+  },
+  {
+    "package": "@nativescript-community/ui-material-ripple",
+    "version": "7.2.74"
+  },
+  {
+    "package": "@nativescript-community/ui-material-ripple",
+    "version": "7.2.75"
+  },
+  {
+    "package": "@nativescript-community/ui-material-tabs",
+    "version": "7.2.72"
+  },
+  {
+    "package": "@nativescript-community/ui-material-tabs",
+    "version": "7.2.73"
+  },
+  {
+    "package": "@nativescript-community/ui-material-tabs",
+    "version": "7.2.74"
+  },
+  {
+    "package": "@nativescript-community/ui-material-tabs",
+    "version": "7.2.75"
+  },
+  {
+    "package": "@nativescript-community/ui-pager",
+    "version": "14.1.35"
+  },
+  {
+    "package": "@nativescript-community/ui-pager",
+    "version": "14.1.36"
+  },
+  {
+    "package": "@nativescript-community/ui-pager",
+    "version": "14.1.37"
+  },
+  {
+    "package": "@nativescript-community/ui-pager",
+    "version": "14.1.38"
+  },
+  {
+    "package": "@nativescript-community/ui-pulltorefresh",
+    "version": "2.5.4"
+  },
+  {
+    "package": "@nativescript-community/ui-pulltorefresh",
+    "version": "2.5.5"
+  },
+  {
+    "package": "@nativescript-community/ui-pulltorefresh",
+    "version": "2.5.6"
+  },
+  {
+    "package": "@nativescript-community/ui-pulltorefresh",
+    "version": "2.5.7"
+  },
+  {
+    "package": "@nexe/config-manager",
+    "version": "0.1.1"
+  },
+  {
+    "package": "@nexe/eslint-config",
+    "version": "0.1.1"
+  },
+  {
+    "package": "@nexe/logger",
+    "version": "0.1.3"
+  },
+  {
+    "package": "@nstudio/angular",
+    "version": "20.0.4"
+  },
+  {
+    "package": "@nstudio/angular",
+    "version": "20.0.5"
+  },
+  {
+    "package": "@nstudio/angular",
+    "version": "20.0.6"
+  },
+  {
+    "package": "@nstudio/focus",
+    "version": "20.0.4"
+  },
+  {
+    "package": "@nstudio/focus",
+    "version": "20.0.5"
+  },
+  {
+    "package": "@nstudio/focus",
+    "version": "20.0.6"
+  },
+  {
+    "package": "@nstudio/nativescript-checkbox",
+    "version": "2.0.6"
+  },
+  {
+    "package": "@nstudio/nativescript-checkbox",
+    "version": "2.0.7"
+  },
+  {
+    "package": "@nstudio/nativescript-checkbox",
+    "version": "2.0.8"
+  },
+  {
+    "package": "@nstudio/nativescript-checkbox",
+    "version": "2.0.9"
+  },
+  {
+    "package": "@nstudio/nativescript-loading-indicator",
+    "version": "5.0.1"
+  },
+  {
+    "package": "@nstudio/nativescript-loading-indicator",
+    "version": "5.0.2"
+  },
+  {
+    "package": "@nstudio/nativescript-loading-indicator",
+    "version": "5.0.3"
+  },
+  {
+    "package": "@nstudio/nativescript-loading-indicator",
+    "version": "5.0.4"
+  },
+  {
+    "package": "@nstudio/ui-collectionview",
+    "version": "5.1.11"
+  },
+  {
+    "package": "@nstudio/ui-collectionview",
+    "version": "5.1.12"
+  },
+  {
+    "package": "@nstudio/ui-collectionview",
+    "version": "5.1.13"
+  },
+  {
+    "package": "@nstudio/ui-collectionview",
+    "version": "5.1.14"
+  },
+  {
+    "package": "@nstudio/web",
+    "version": "20.0.4"
+  },
+  {
+    "package": "@nstudio/web-angular",
+    "version": "20.0.4"
+  },
+  {
+    "package": "@nstudio/xplat",
+    "version": "20.0.4"
+  },
+  {
+    "package": "@nstudio/xplat",
+    "version": "20.0.5"
+  },
+  {
+    "package": "@nstudio/xplat",
+    "version": "20.0.6"
+  },
+  {
+    "package": "@nstudio/xplat",
+    "version": "20.0.7"
+  },
+  {
+    "package": "@nstudio/xplat-utils",
+    "version": "20.0.4"
+  },
+  {
+    "package": "@nstudio/xplat-utils",
+    "version": "20.0.5"
+  },
+  {
+    "package": "@nstudio/xplat-utils",
+    "version": "20.0.6"
+  },
+  {
+    "package": "@nstudio/xplat-utils",
+    "version": "20.0.7"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.36"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.38"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.39"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.40"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.41"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.46"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.47"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.48"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.49"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.50"
+  },
+  {
+    "package": "@operato/board",
+    "version": "9.0.51"
+  },
+  {
+    "package": "@operato/data-grist",
+    "version": "9.0.29"
+  },
+  {
+    "package": "@operato/data-grist",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/data-grist",
+    "version": "9.0.36"
+  },
+  {
+    "package": "@operato/data-grist",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.22"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.36"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.38"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.39"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.40"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.41"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.46"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.47"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.48"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.49"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.50"
+  },
+  {
+    "package": "@operato/graphql",
+    "version": "9.0.51"
+  },
+  {
+    "package": "@operato/headroom",
+    "version": "9.0.2"
+  },
+  {
+    "package": "@operato/headroom",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/headroom",
+    "version": "9.0.36"
+  },
+  {
+    "package": "@operato/headroom",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.36"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.38"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.39"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.40"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.41"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.46"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.47"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.48"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.49"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.50"
+  },
+  {
+    "package": "@operato/help",
+    "version": "9.0.51"
+  },
+  {
+    "package": "@operato/i18n",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/i18n",
+    "version": "9.0.36"
+  },
+  {
+    "package": "@operato/i18n",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.36"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.38"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.39"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.40"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.41"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.46"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.47"
+  },
+  {
+    "package": "@operato/input",
+    "version": "9.0.48"
+  },
+  {
+    "package": "@operato/layout",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/layout",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.36"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.38"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.39"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.40"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.41"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.46"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.47"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.48"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.49"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.50"
+  },
+  {
+    "package": "@operato/popup",
+    "version": "9.0.51"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.36"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.38"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.39"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.40"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.41"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.46"
+  },
+  {
+    "package": "@operato/pull-to-refresh",
+    "version": "9.0.47"
+  },
+  {
+    "package": "@operato/shell",
+    "version": "9.0.22"
+  },
+  {
+    "package": "@operato/shell",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/shell",
+    "version": "9.0.36"
+  },
+  {
+    "package": "@operato/shell",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/shell",
+    "version": "9.0.38"
+  },
+  {
+    "package": "@operato/shell",
+    "version": "9.0.39"
+  },
+  {
+    "package": "@operato/styles",
+    "version": "9.0.2"
+  },
+  {
+    "package": "@operato/styles",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/styles",
+    "version": "9.0.36"
+  },
+  {
+    "package": "@operato/styles",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.22"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.35"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.36"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.37"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.38"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.39"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.40"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.41"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.46"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.47"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.48"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.49"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.50"
+  },
+  {
+    "package": "@operato/utils",
+    "version": "9.0.51"
+  },
+  {
+    "package": "@teselagen/bio-parsers",
+    "version": "0.4.29"
+  },
+  {
+    "package": "@teselagen/bio-parsers",
+    "version": "0.4.30"
+  },
+  {
+    "package": "@teselagen/bounce-loader",
+    "version": "0.3.16"
+  },
+  {
+    "package": "@teselagen/bounce-loader",
+    "version": "0.3.17"
+  },
+  {
+    "package": "@teselagen/file-utils",
+    "version": "0.3.21"
+  },
+  {
+    "package": "@teselagen/file-utils",
+    "version": "0.3.22"
+  },
+  {
+    "package": "@teselagen/liquibase-tools",
+    "version": "0.4.1"
+  },
+  {
+    "package": "@teselagen/ove",
+    "version": "0.7.39"
+  },
+  {
+    "package": "@teselagen/ove",
+    "version": "0.7.40"
+  },
+  {
+    "package": "@teselagen/range-utils",
+    "version": "0.3.14"
+  },
+  {
+    "package": "@teselagen/range-utils",
+    "version": "0.3.15"
+  },
+  {
+    "package": "@teselagen/react-list",
+    "version": "0.8.19"
+  },
+  {
+    "package": "@teselagen/react-list",
+    "version": "0.8.20"
+  },
+  {
+    "package": "@teselagen/react-table",
+    "version": "6.10.19"
+  },
+  {
+    "package": "@teselagen/react-table",
+    "version": "6.10.20"
+  },
+  {
+    "package": "@teselagen/react-table",
+    "version": "6.10.21"
+  },
+  {
+    "package": "@teselagen/react-table",
+    "version": "6.10.22"
+  },
+  {
+    "package": "@teselagen/sequence-utils",
+    "version": "0.3.33"
+  },
+  {
+    "package": "@teselagen/sequence-utils",
+    "version": "0.3.34"
+  },
+  {
+    "package": "@teselagen/ui",
+    "version": "0.9.10"
+  },
+  {
+    "package": "@teselagen/ui",
+    "version": "0.9.9"
+  },
+  {
+    "package": "@thangved/callback-window",
+    "version": "1.1.4"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.46"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.47"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.48"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.49"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.50"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.51"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.52"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.53"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.54"
+  },
+  {
+    "package": "@things-factory/attachment-base",
+    "version": "9.0.55"
+  },
+  {
+    "package": "@things-factory/auth-base",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@things-factory/auth-base",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@things-factory/auth-base",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@things-factory/auth-base",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.46"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.47"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.48"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.49"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.50"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.51"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.52"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.53"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.54"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.55"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.56"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.57"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.58"
+  },
+  {
+    "package": "@things-factory/email-base",
+    "version": "9.0.59"
+  },
+  {
+    "package": "@things-factory/env",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@things-factory/env",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@things-factory/env",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@things-factory/env",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@things-factory/integration-base",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@things-factory/integration-base",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@things-factory/integration-base",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@things-factory/integration-base",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@things-factory/integration-marketplace",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@things-factory/integration-marketplace",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@things-factory/integration-marketplace",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@things-factory/integration-marketplace",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@things-factory/shell",
+    "version": "9.0.42"
+  },
+  {
+    "package": "@things-factory/shell",
+    "version": "9.0.43"
+  },
+  {
+    "package": "@things-factory/shell",
+    "version": "9.0.44"
+  },
+  {
+    "package": "@things-factory/shell",
+    "version": "9.0.45"
+  },
+  {
+    "package": "@tnf-dev/api",
+    "version": "1.0.8"
+  },
+  {
+    "package": "@tnf-dev/core",
+    "version": "1.0.8"
+  },
+  {
+    "package": "@tnf-dev/js",
+    "version": "1.0.8"
+  },
+  {
+    "package": "@tnf-dev/mui",
+    "version": "1.0.8"
+  },
+  {
+    "package": "@tnf-dev/react",
+    "version": "1.0.8"
+  },
+  {
+    "package": "@ui-ux-gang/devextreme-angular-rpk",
+    "version": "24.1.7"
+  },
+  {
+    "package": "@ui-ux-gang/devextreme-rpk",
+    "version": "24.1.7"
+  },
+  {
+    "package": "@yoobic/design-system",
+    "version": "6.5.17"
+  },
+  {
+    "package": "@yoobic/jpeg-camera-es6",
+    "version": "1.0.13"
+  },
+  {
+    "package": "@yoobic/yobi",
+    "version": "8.7.53"
+  },
+  {
+    "package": "ace-colorpicker-rpk",
+    "version": "0.0.14"
+  },
+  {
+    "package": "airchief",
+    "version": "0.3.1"
+  },
+  {
+    "package": "airpilot",
+    "version": "0.8.8"
+  },
+  {
+    "package": "angulartics2",
+    "version": "14.1.1"
+  },
+  {
+    "package": "browser-webdriver-downloader",
+    "version": "3.0.8"
+  },
+  {
+    "package": "capacitor-notificationhandler",
+    "version": "0.0.2"
+  },
+  {
+    "package": "capacitor-notificationhandler",
+    "version": "0.0.3"
+  },
+  {
+    "package": "capacitor-plugin-healthapp",
+    "version": "0.0.2"
+  },
+  {
+    "package": "capacitor-plugin-healthapp",
+    "version": "0.0.3"
+  },
+  {
+    "package": "capacitor-plugin-ihealth",
+    "version": "1.1.8"
+  },
+  {
+    "package": "capacitor-plugin-ihealth",
+    "version": "1.1.9"
+  },
+  {
+    "package": "capacitor-plugin-vonage",
+    "version": "1.0.2"
+  },
+  {
+    "package": "capacitor-plugin-vonage",
+    "version": "1.0.3"
+  },
+  {
+    "package": "capacitorandroidpermissions",
+    "version": "0.0.4"
+  },
+  {
+    "package": "capacitorandroidpermissions",
+    "version": "0.0.5"
+  },
+  {
+    "package": "config-cordova",
+    "version": "0.8.5"
+  },
+  {
+    "package": "cordova-plugin-voxeet2",
+    "version": "1.0.24"
+  },
+  {
+    "package": "cordova-voxeet",
+    "version": "1.0.32"
+  },
+  {
+    "package": "create-hest-app",
+    "version": "0.1.9"
+  },
+  {
+    "package": "db-evo",
+    "version": "1.1.4"
+  },
+  {
+    "package": "db-evo",
+    "version": "1.1.5"
+  },
+  {
+    "package": "devextreme-angular-rpk",
+    "version": "21.2.8"
+  },
+  {
+    "package": "devextreme-rpk",
+    "version": "21.2.8"
+  },
+  {
+    "package": "ember-browser-services",
+    "version": "5.0.2"
+  },
+  {
+    "package": "ember-browser-services",
+    "version": "5.0.3"
+  },
+  {
+    "package": "ember-headless-form",
+    "version": "1.1.2"
+  },
+  {
+    "package": "ember-headless-form",
+    "version": "1.1.3"
+  },
+  {
+    "package": "ember-headless-form-yup",
+    "version": "1.0.1"
+  },
+  {
+    "package": "ember-headless-table",
+    "version": "2.1.5"
+  },
+  {
+    "package": "ember-headless-table",
+    "version": "2.1.6"
+  },
+  {
+    "package": "ember-url-hash-polyfill",
+    "version": "1.0.12"
+  },
+  {
+    "package": "ember-url-hash-polyfill",
+    "version": "1.0.13"
+  },
+  {
+    "package": "ember-velcro",
+    "version": "2.2.1"
+  },
+  {
+    "package": "ember-velcro",
+    "version": "2.2.2"
+  },
+  {
+    "package": "encounter-playground",
+    "version": "0.0.2"
+  },
+  {
+    "package": "encounter-playground",
+    "version": "0.0.3"
+  },
+  {
+    "package": "encounter-playground",
+    "version": "0.0.4"
+  },
+  {
+    "package": "eslint-config-crowdstrike",
+    "version": "11.0.2"
+  },
+  {
+    "package": "eslint-config-crowdstrike",
+    "version": "11.0.3"
+  },
+  {
+    "package": "eslint-config-crowdstrike-node",
+    "version": "4.0.3"
+  },
+  {
+    "package": "eslint-config-crowdstrike-node",
+    "version": "4.0.4"
+  },
+  {
+    "package": "eslint-config-teselagen",
+    "version": "6.1.7"
+  },
+  {
+    "package": "eslint-config-teselagen",
+    "version": "6.1.8"
+  },
+  {
+    "package": "globalize-rpk",
+    "version": "1.7.4"
+  },
+  {
+    "package": "graphql-sequelize-teselagen",
+    "version": "5.3.8"
+  },
+  {
+    "package": "graphql-sequelize-teselagen",
+    "version": "5.3.9"
+  },
+  {
+    "package": "html-to-base64-image",
+    "version": "1.0.2"
+  },
+  {
+    "package": "json-rules-engine-simplified",
+    "version": "0.2.1"
+  },
+  {
+    "package": "json-rules-engine-simplified",
+    "version": "0.2.2"
+  },
+  {
+    "package": "json-rules-engine-simplified",
+    "version": "0.2.3"
+  },
+  {
+    "package": "json-rules-engine-simplified",
+    "version": "0.2.4"
+  },
+  {
+    "package": "jumpgate",
+    "version": "0.0.2"
+  },
+  {
+    "package": "koa2-swagger-ui",
+    "version": "5.11.1"
+  },
+  {
+    "package": "koa2-swagger-ui",
+    "version": "5.11.2"
+  },
+  {
+    "package": "mcfly-semantic-release",
+    "version": "1.3.1"
+  },
+  {
+    "package": "mcp-knowledge-base",
+    "version": "0.0.2"
+  },
+  {
+    "package": "mcp-knowledge-graph",
+    "version": "1.2.1"
+  },
+  {
+    "package": "mobioffice-cli",
+    "version": "1.0.3"
+  },
+  {
+    "package": "monorepo-next",
+    "version": "13.0.1"
+  },
+  {
+    "package": "monorepo-next",
+    "version": "13.0.2"
+  },
+  {
+    "package": "mstate-angular",
+    "version": "0.4.4"
+  },
+  {
+    "package": "mstate-cli",
+    "version": "0.4.7"
+  },
+  {
+    "package": "mstate-dev-react",
+    "version": "1.1.1"
+  },
+  {
+    "package": "mstate-react",
+    "version": "1.6.5"
+  },
+  {
+    "package": "ng-imports-checker",
+    "version": "0.0.10"
+  },
+  {
+    "package": "ng-imports-checker",
+    "version": "0.0.9"
+  },
+  {
+    "package": "ng2-file-upload",
+    "version": "7.0.2"
+  },
+  {
+    "package": "ng2-file-upload",
+    "version": "8.0.1"
+  },
+  {
+    "package": "ng2-file-upload",
+    "version": "8.0.2"
+  },
+  {
+    "package": "ng2-file-upload",
+    "version": "8.0.3"
+  },
+  {
+    "package": "ng2-file-upload",
+    "version": "9.0.1"
+  },
+  {
+    "package": "ngx-bootstrap",
+    "version": "18.1.4"
+  },
+  {
+    "package": "ngx-bootstrap",
+    "version": "19.0.3"
+  },
+  {
+    "package": "ngx-bootstrap",
+    "version": "19.0.4"
+  },
+  {
+    "package": "ngx-bootstrap",
+    "version": "20.0.3"
+  },
+  {
+    "package": "ngx-bootstrap",
+    "version": "20.0.4"
+  },
+  {
+    "package": "ngx-bootstrap",
+    "version": "20.0.5"
+  },
+  {
+    "package": "ngx-bootstrap",
+    "version": "20.0.6"
+  },
+  {
+    "package": "ngx-color",
+    "version": "10.0.1"
+  },
+  {
+    "package": "ngx-toastr",
+    "version": "19.0.1"
+  },
+  {
+    "package": "ngx-ws",
+    "version": "1.1.5"
+  },
+  {
+    "package": "ngx-ws",
+    "version": "1.1.6"
+  },
+  {
+    "package": "oradm-to-gql",
+    "version": "35.0.14"
+  },
+  {
+    "package": "oradm-to-gql",
+    "version": "35.0.15"
+  },
+  {
+    "package": "oradm-to-sqlz",
+    "version": "1.1.2"
+  },
+  {
+    "package": "oradm-to-sqlz",
+    "version": "1.1.3"
+  },
+  {
+    "package": "oradm-to-sqlz",
+    "version": "1.1.4"
+  },
+  {
+    "package": "oradm-to-sqlz",
+    "version": "1.1.5"
+  },
+  {
+    "package": "ove-auto-annotate",
+    "version": "0.0.10"
+  },
+  {
+    "package": "ove-auto-annotate",
+    "version": "0.0.9"
+  },
+  {
+    "package": "pm2-gelf-json",
+    "version": "1.0.4"
+  },
+  {
+    "package": "pm2-gelf-json",
+    "version": "1.0.5"
+  },
+  {
+    "package": "printjs-rpk",
+    "version": "1.6.1"
+  },
+  {
+    "package": "react-complaint-image",
+    "version": "0.0.32"
+  },
+  {
+    "package": "react-complaint-image",
+    "version": "0.0.33"
+  },
+  {
+    "package": "react-complaint-image",
+    "version": "0.0.34"
+  },
+  {
+    "package": "react-jsonschema-form-conditionals",
+    "version": "0.3.18"
+  },
+  {
+    "package": "react-jsonschema-form-conditionals",
+    "version": "0.3.19"
+  },
+  {
+    "package": "react-jsonschema-form-conditionals",
+    "version": "0.3.20"
+  },
+  {
+    "package": "react-jsonschema-form-extras",
+    "version": "1.0.1"
+  },
+  {
+    "package": "react-jsonschema-form-extras",
+    "version": "1.0.2"
+  },
+  {
+    "package": "react-jsonschema-form-extras",
+    "version": "1.0.3"
+  },
+  {
+    "package": "react-jsonschema-rxnt-extras",
+    "version": "0.4.6"
+  },
+  {
+    "package": "react-jsonschema-rxnt-extras",
+    "version": "0.4.7"
+  },
+  {
+    "package": "react-jsonschema-rxnt-extras",
+    "version": "0.4.8"
+  },
+  {
+    "package": "react-jsonschema-rxnt-extras",
+    "version": "0.4.9"
+  },
+  {
+    "package": "remark-preset-lint-crowdstrike",
+    "version": "4.0.1"
+  },
+  {
+    "package": "remark-preset-lint-crowdstrike",
+    "version": "4.0.2"
+  },
+  {
+    "package": "rxnt-authentication",
+    "version": "0.0.3"
+  },
+  {
+    "package": "rxnt-authentication",
+    "version": "0.0.4"
+  },
+  {
+    "package": "rxnt-authentication",
+    "version": "0.0.5"
+  },
+  {
+    "package": "rxnt-healthchecks-nestjs",
+    "version": "1.0.2"
+  },
+  {
+    "package": "rxnt-healthchecks-nestjs",
+    "version": "1.0.3"
+  },
+  {
+    "package": "rxnt-healthchecks-nestjs",
+    "version": "1.0.4"
+  },
+  {
+    "package": "rxnt-kue",
+    "version": "1.0.4"
+  },
+  {
+    "package": "rxnt-kue",
+    "version": "1.0.5"
+  },
+  {
+    "package": "rxnt-kue",
+    "version": "1.0.6"
+  },
+  {
+    "package": "swc-plugin-component-annotate",
+    "version": "1.9.1"
+  },
+  {
+    "package": "tbssnch",
+    "version": "1.0.2"
+  },
+  {
+    "package": "teselagen-interval-tree",
+    "version": "1.1.2"
+  },
+  {
+    "package": "tg-client-query-builder",
+    "version": "2.14.4"
+  },
+  {
+    "package": "tg-client-query-builder",
+    "version": "2.14.5"
+  },
+  {
+    "package": "tg-redbird",
+    "version": "1.3.1"
+  },
+  {
+    "package": "tg-redbird",
+    "version": "1.3.2"
+  },
+  {
+    "package": "tg-seq-gen",
+    "version": "1.0.10"
+  },
+  {
+    "package": "tg-seq-gen",
+    "version": "1.0.9"
+  },
+  {
+    "package": "thangved-react-grid",
+    "version": "1.0.3"
+  },
+  {
+    "package": "ts-gaussian",
+    "version": "3.0.5"
+  },
+  {
+    "package": "ts-imports",
+    "version": "1.0.1"
+  },
+  {
+    "package": "ts-imports",
+    "version": "1.0.2"
+  },
+  {
+    "package": "tvi-cli",
+    "version": "0.1.5"
+  },
+  {
+    "package": "ve-bamreader",
+    "version": "0.2.6"
+  },
+  {
+    "package": "ve-bamreader",
+    "version": "0.2.7"
+  },
+  {
+    "package": "ve-editor",
+    "version": "1.0.1"
+  },
+  {
+    "package": "ve-editor",
+    "version": "1.0.2"
+  },
+  {
+    "package": "verror-extra",
+    "version": "6.0.1"
+  },
+  {
+    "package": "voip-callkit",
+    "version": "1.0.2"
+  },
+  {
+    "package": "voip-callkit",
+    "version": "1.0.3"
+  },
+  {
+    "package": "wdio-web-reporter",
+    "version": "0.1.3"
+  },
+  {
+    "package": "yargs-help-output",
+    "version": "5.0.3"
+  },
+  {
+    "package": "yoo-styles",
+    "version": "6.0.326"
   }
 ]
