@@ -199,17 +199,41 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
     if [ "$(echo "$INF_FINDINGS" | jq 'length')" -gt 0 ]; then
         echo "  ⚠️  CONFIRMED_INFECTED"
         echo "$INF_FINDINGS" | jq -r '.[] | "      - \(.type): \(.name // .file // .evidence)"'
+
+        # Add to results.json
+        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson indicators "$INF_FINDINGS" \
+            '{repo: $repo, indicators: $indicators}')
+        jq ".findings.confirmed_infected += [$FINDING]" "$OUTPUT_FILE" > "$OUTPUT_FILE.tmp" && \
+            mv "$OUTPUT_FILE.tmp" "$OUTPUT_FILE"
+
     elif [ "$(echo "$DEP_FINDINGS" | jq 'length')" -gt 0 ]; then
         echo "  ⚠️  LIKELY_VULNERABLE"
         echo "$DEP_FINDINGS" | jq -r '.[] | "      - \(.package)@\(.malicious_version)"'
+
+        # Add to results.json
+        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson deps "$DEP_FINDINGS" \
+            '{repo: $repo, vulnerabilities: $deps}')
+        jq ".findings.likely_vulnerable += [$FINDING]" "$OUTPUT_FILE" > "$OUTPUT_FILE.tmp" && \
+            mv "$OUTPUT_FILE.tmp" "$OUTPUT_FILE"
+
     elif [ "$(echo "$AFFECTED_PKGS" | jq 'length')" -gt 0 ]; then
         echo "  ℹ️  HAS_AFFECTED_PACKAGES (safe versions)"
         echo "$AFFECTED_PKGS" | jq -r '.[] | "      - \(.package)@\(.declared_version) (malicious: \(.malicious_versions | join(", ")))"'
+
+        # Add to results.json
+        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson pkgs "$AFFECTED_PKGS" \
+            '{repo: $repo, packages: $pkgs}')
+        jq ".findings.has_affected_packages += [$FINDING]" "$OUTPUT_FILE" > "$OUTPUT_FILE.tmp" && \
+            mv "$OUTPUT_FILE.tmp" "$OUTPUT_FILE"
     else
         echo "  ✓ Clean"
     fi
 
     SCANNED=$((SCANNED + 1))
+
+    # Update scan metadata
+    jq ".scan_metadata.total_repos_scanned = $SCANNED" "$OUTPUT_FILE" > "$OUTPUT_FILE.tmp" && \
+        mv "$OUTPUT_FILE.tmp" "$OUTPUT_FILE"
 
     # Checkpoint every N repos
     if [ $((SCANNED % CHECKPOINT_INTERVAL)) -eq 0 ]; then
