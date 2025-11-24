@@ -134,62 +134,153 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
 
     echo "[$((SCANNED + 1))/$TOTAL_REPOS] Scanning: $FULL_NAME"
 
-    # Fetch package.json
-    PACKAGE_JSON=$(gh api "/repos/$FULL_NAME/contents/package.json" \
-        --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo "")
+    # Get git tree recursively to find all package.json files
+    TREE_RESULT=$(gh api "/repos/$FULL_NAME/git/trees/$DEFAULT_BRANCH?recursive=1" 2>/dev/null || echo "")
 
-    if [ -z "$PACKAGE_JSON" ]; then
+    if [ -z "$TREE_RESULT" ]; then
+        echo "  → Could not fetch repository tree"
+        SCANNED=$((SCANNED + 1))
+        continue
+    fi
+
+    # Check if tree was truncated
+    TRUNCATED=$(echo "$TREE_RESULT" | jq -r '.truncated // false')
+    if [ "$TRUNCATED" = "true" ]; then
+        echo "  ⚠️  WARNING: Repository tree truncated (too many files)"
+    fi
+
+    # Find all package.json paths
+    PACKAGE_PATHS=$(echo "$TREE_RESULT" | jq -r '.tree[]? | select(.path | endswith("package.json")) | .path')
+
+    if [ -z "$PACKAGE_PATHS" ]; then
         echo "  → No package.json found"
         SCANNED=$((SCANNED + 1))
         continue
     fi
 
-    # Fetch lock files
-    PACKAGE_LOCK=$(gh api "/repos/$FULL_NAME/contents/package-lock.json" \
-        --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo "")
+    # Count packages found
+    PACKAGE_COUNT=$(echo "$PACKAGE_PATHS" | wc -l | tr -d ' ')
+    if [ "$PACKAGE_COUNT" -gt 1 ]; then
+        echo "  → Found $PACKAGE_COUNT packages (monorepo)"
+    fi
 
-    YARN_LOCK=$(gh api "/repos/$FULL_NAME/contents/yarn.lock" \
-        --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo "")
+    # Create temp files for aggregating results across packages
+    TMP_VULNS="/tmp/scan-vulns-$$.json"
+    TMP_AFFECTED="/tmp/scan-affected-$$.json"
+    TMP_WARNINGS="/tmp/scan-warnings-$$.json"
+    echo "[]" > "$TMP_VULNS"
+    echo "[]" > "$TMP_AFFECTED"
+    echo "[]" > "$TMP_WARNINGS"
 
-    PNPM_LOCK=$(gh api "/repos/$FULL_NAME/contents/pnpm-lock.yaml" \
-        --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo "")
+    # Process each package.json
+    while IFS= read -r PKG_PATH; do
+        # Extract directory
+        PKG_DIR=$(dirname "$PKG_PATH")
 
-    # Check dependencies with lock files
-    # Write data to temp files to avoid bash string escaping issues
-    TMP_PKG="/tmp/scan-pkg-$$.json"
-    TMP_LOCK_NPM="/tmp/scan-lock-npm-$$.json"
-    TMP_LOCK_YARN="/tmp/scan-lock-yarn-$$.lock"
-    TMP_LOCK_PNPM="/tmp/scan-lock-pnpm-$$.yaml"
+        if [ "$PACKAGE_COUNT" -gt 1 ]; then
+            echo "    Checking: $PKG_PATH"
+        fi
 
-    echo "$PACKAGE_JSON" > "$TMP_PKG"
-    echo "$PACKAGE_LOCK" > "$TMP_LOCK_NPM"
-    echo "$YARN_LOCK" > "$TMP_LOCK_YARN"
-    echo "$PNPM_LOCK" > "$TMP_LOCK_PNPM"
+        # Fetch package.json
+        FETCH_ERROR=""
+        PACKAGE_JSON=$(gh api "/repos/$FULL_NAME/contents/$PKG_PATH" \
+            --jq '.content' 2>&1 | base64 -d 2>&1)
 
-    DEP_RESULT=$(node -e "
-        const { checkDependencies } = require('./lib/check-dependencies');
-        const fs = require('fs');
-        const malicious = JSON.parse(fs.readFileSync('shai_hulud_packages.json', 'utf8'));
-        const packageJson = fs.readFileSync('$TMP_PKG', 'utf8');
+        if [ $? -ne 0 ] || [ -z "$PACKAGE_JSON" ]; then
+            FETCH_ERROR="Failed to fetch $PKG_PATH"
+            echo "      ⚠️  WARNING: $FETCH_ERROR"
+            jq --arg path "$PKG_PATH" --arg err "$FETCH_ERROR" \
+                '. += [{path: $path, error: $err}]' "$TMP_WARNINGS" > "$TMP_WARNINGS.tmp" && \
+                mv "$TMP_WARNINGS.tmp" "$TMP_WARNINGS"
+            continue
+        fi
 
-        const lockFiles = [];
-        const packageLock = fs.readFileSync('$TMP_LOCK_NPM', 'utf8');
-        const yarnLock = fs.readFileSync('$TMP_LOCK_YARN', 'utf8');
-        const pnpmLock = fs.readFileSync('$TMP_LOCK_PNPM', 'utf8');
+        # Look for lock files in the same directory
+        LOCK_FILE_NAMES=("package-lock.json" "yarn.lock" "pnpm-lock.yaml")
+        LOCK_FILES_JSON="[]"
 
-        if (packageLock.trim()) lockFiles.push({ type: 'package-lock.json', content: packageLock });
-        if (yarnLock.trim()) lockFiles.push({ type: 'yarn.lock', content: yarnLock });
-        if (pnpmLock.trim()) lockFiles.push({ type: 'pnpm-lock.yaml', content: pnpmLock });
+        for LOCK_NAME in "${LOCK_FILE_NAMES[@]}"; do
+            if [ "$PKG_DIR" = "." ]; then
+                LOCK_PATH="$LOCK_NAME"
+            else
+                LOCK_PATH="$PKG_DIR/$LOCK_NAME"
+            fi
 
-        const result = checkDependencies(packageJson, lockFiles.length > 0 ? lockFiles : null, malicious);
-        console.log(JSON.stringify(result));
-    " 2>/dev/null || echo '{"vulnerabilities":[],"affectedPackages":[]}')
+            # Check if lock file exists in tree
+            LOCK_EXISTS=$(echo "$TREE_RESULT" | jq --arg path "$LOCK_PATH" \
+                '.tree[]? | select(.path == $path) | .path')
+
+            if [ -n "$LOCK_EXISTS" ]; then
+                # Fetch lock file
+                LOCK_CONTENT=$(gh api "/repos/$FULL_NAME/contents/$LOCK_PATH" \
+                    --jq '.content' 2>&1 | base64 -d 2>&1)
+
+                if [ $? -eq 0 ] && [ -n "$LOCK_CONTENT" ]; then
+                    # Add to lock files array
+                    TMP_LOCK="/tmp/scan-lock-$$-$(echo "$LOCK_NAME" | tr '.' '-')"
+                    echo "$LOCK_CONTENT" > "$TMP_LOCK"
+                    LOCK_FILES_JSON=$(echo "$LOCK_FILES_JSON" | jq --arg type "$LOCK_NAME" --arg path "$TMP_LOCK" \
+                        '. += [{type: $type, tempPath: $path}]')
+                else
+                    # Failed to fetch lock file
+                    FETCH_ERROR="Failed to fetch $LOCK_PATH (may be >1MB)"
+                    echo "      ⚠️  WARNING: $FETCH_ERROR"
+                    jq --arg path "$LOCK_PATH" --arg err "$FETCH_ERROR" \
+                        '. += [{path: $path, error: $err}]' "$TMP_WARNINGS" > "$TMP_WARNINGS.tmp" && \
+                        mv "$TMP_WARNINGS.tmp" "$TMP_WARNINGS"
+                fi
+            fi
+        done
+
+        # Write package.json to temp file
+        TMP_PKG="/tmp/scan-pkg-$$.json"
+        echo "$PACKAGE_JSON" > "$TMP_PKG"
+
+        # Check dependencies
+        DEP_RESULT=$(node -e "
+            const { checkDependencies } = require('./lib/check-dependencies');
+            const fs = require('fs');
+            const malicious = JSON.parse(fs.readFileSync('shai_hulud_packages.json', 'utf8'));
+            const packageJson = fs.readFileSync('$TMP_PKG', 'utf8');
+
+            const lockFilesData = $LOCK_FILES_JSON;
+            const lockFiles = [];
+
+            for (const lockFile of lockFilesData) {
+                const content = fs.readFileSync(lockFile.tempPath, 'utf8');
+                if (content.trim()) {
+                    lockFiles.push({ type: lockFile.type, content: content });
+                }
+            }
+
+            const result = checkDependencies(packageJson, lockFiles.length > 0 ? lockFiles : null, malicious);
+            console.log(JSON.stringify(result));
+        " 2>/dev/null || echo '{"vulnerabilities":[],"affectedPackages":[]}')
+
+        # Cleanup temp files
+        rm -f "$TMP_PKG"
+        echo "$LOCK_FILES_JSON" | jq -r '.[].tempPath' | xargs -I {} rm -f {}
+
+        # Merge results - add package path to each finding
+        PKG_VULNERABILITIES=$(echo "$DEP_RESULT" | jq --arg path "$PKG_PATH" \
+            '.vulnerabilities | map(. + {package_json_path: $path})')
+        PKG_AFFECTED=$(echo "$DEP_RESULT" | jq --arg path "$PKG_PATH" \
+            '.affectedPackages | map(. + {package_json_path: $path})')
+
+        # Append to temp files
+        jq --argjson new "$PKG_VULNERABILITIES" '. + $new' "$TMP_VULNS" > "$TMP_VULNS.tmp" && \
+            mv "$TMP_VULNS.tmp" "$TMP_VULNS"
+        jq --argjson new "$PKG_AFFECTED" '. + $new' "$TMP_AFFECTED" > "$TMP_AFFECTED.tmp" && \
+            mv "$TMP_AFFECTED.tmp" "$TMP_AFFECTED"
+    done < <(echo "$PACKAGE_PATHS")
+
+    # Read aggregated results from temp files
+    DEP_FINDINGS=$(cat "$TMP_VULNS")
+    AFFECTED_PKGS=$(cat "$TMP_AFFECTED")
+    SCAN_WARNINGS=$(cat "$TMP_WARNINGS")
 
     # Cleanup temp files
-    rm -f "$TMP_PKG" "$TMP_LOCK_NPM" "$TMP_LOCK_YARN" "$TMP_LOCK_PNPM"
-
-    DEP_FINDINGS=$(echo "$DEP_RESULT" | jq '.vulnerabilities')
-    AFFECTED_PKGS=$(echo "$DEP_RESULT" | jq '.affectedPackages')
+    rm -f "$TMP_VULNS" "$TMP_AFFECTED" "$TMP_WARNINGS"
 
     # Check for runners
     RUNNERS=$(gh api "/repos/$FULL_NAME/actions/runners" \
@@ -215,38 +306,48 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
 
     rm -f "$TMP_DESC"
 
+    # Display warnings if any
+    if [ "$(echo "$SCAN_WARNINGS" | jq 'length')" -gt 0 ]; then
+        echo "  ⚠️  WARNINGS:"
+        echo "$SCAN_WARNINGS" | jq -r '.[] | "      - \(.path): \(.error)"'
+    fi
+
     # Classify and report
     if [ "$(echo "$INF_FINDINGS" | jq 'length')" -gt 0 ]; then
         echo "  ⚠️  CONFIRMED_INFECTED"
         echo "$INF_FINDINGS" | jq -r '.[] | "      - \(.type): \(.name // .file // .evidence)"'
 
         # Add to results.json
-        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson indicators "$INF_FINDINGS" \
-            '{repo: $repo, indicators: $indicators}')
+        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson indicators "$INF_FINDINGS" --argjson warnings "$SCAN_WARNINGS" \
+            '{repo: $repo, indicators: $indicators, warnings: $warnings}')
         jq ".findings.confirmed_infected += [$FINDING]" "$OUTPUT_FILE" > "$OUTPUT_FILE.tmp" && \
             mv "$OUTPUT_FILE.tmp" "$OUTPUT_FILE"
 
     elif [ "$(echo "$DEP_FINDINGS" | jq 'length')" -gt 0 ]; then
         echo "  ⚠️  LIKELY_VULNERABLE"
-        echo "$DEP_FINDINGS" | jq -r '.[] | "      - \(.package)@\(.malicious_version)"'
+        echo "$DEP_FINDINGS" | jq -r '.[] | "      - \(.package)@\(.malicious_version) (in \(.package_json_path // "package.json"))"'
 
         # Add to results.json
-        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson deps "$DEP_FINDINGS" \
-            '{repo: $repo, vulnerabilities: $deps}')
+        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson deps "$DEP_FINDINGS" --argjson warnings "$SCAN_WARNINGS" \
+            '{repo: $repo, vulnerabilities: $deps, warnings: $warnings}')
         jq ".findings.likely_vulnerable += [$FINDING]" "$OUTPUT_FILE" > "$OUTPUT_FILE.tmp" && \
             mv "$OUTPUT_FILE.tmp" "$OUTPUT_FILE"
 
     elif [ "$(echo "$AFFECTED_PKGS" | jq 'length')" -gt 0 ]; then
         echo "  ℹ️  HAS_AFFECTED_PACKAGES (safe versions)"
-        echo "$AFFECTED_PKGS" | jq -r '.[] | "      - \(.package)@\(.declared_version) (malicious: \(.malicious_versions | join(", ")))"'
+        echo "$AFFECTED_PKGS" | jq -r '.[] | "      - \(.package)@\(.declared_version) (malicious: \(.malicious_versions | join(", "))) (in \(.package_json_path // "package.json"))"'
 
         # Add to results.json
-        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson pkgs "$AFFECTED_PKGS" \
-            '{repo: $repo, packages: $pkgs}')
+        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson pkgs "$AFFECTED_PKGS" --argjson warnings "$SCAN_WARNINGS" \
+            '{repo: $repo, packages: $pkgs, warnings: $warnings}')
         jq ".findings.has_affected_packages += [$FINDING]" "$OUTPUT_FILE" > "$OUTPUT_FILE.tmp" && \
             mv "$OUTPUT_FILE.tmp" "$OUTPUT_FILE"
     else
-        echo "  ✓ Clean"
+        if [ "$(echo "$SCAN_WARNINGS" | jq 'length')" -gt 0 ]; then
+            echo "  ✓ Clean (but has warnings)"
+        else
+            echo "  ✓ Clean"
+        fi
     fi
 
     SCANNED=$((SCANNED + 1))

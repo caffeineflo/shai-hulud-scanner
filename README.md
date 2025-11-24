@@ -6,9 +6,12 @@ Comprehensive scanner to detect Betterment repositories affected by the Shai-Hul
 
 This scanner detects:
 - **Vulnerable dependencies**: Repos depending on 300+ poisoned NPM packages
+  - Supports **monorepos**: Recursively finds all `package.json` files in any subdirectory
   - Checks `package.json` for direct dependencies
   - Checks `package-lock.json`, `yarn.lock`, and `pnpm-lock.yaml` for exact locked versions (including transitive dependencies)
+  - Lock files must be in the same directory as `package.json` (typical for monorepo workspaces)
 - **Active infections**: SHA1HULUD runners, malicious workflows, suspicious repo descriptions
+- **File fetch issues**: Warns when files fail to fetch (e.g., >1MB lock files exceed GitHub API limits)
 
 ## Prerequisites
 
@@ -52,18 +55,26 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
 ### Console Output
 
 ```
-[1/150] Scanning: betterment/example-repo
+[1/150] Scanning: betterment/example-monorepo
+  → Found 5 packages (monorepo)
+    Checking: packages/frontend/package.json
+    Checking: packages/backend/package.json
+    Checking: packages/shared/package.json
+    Checking: packages/mobile/package.json
+    Checking: apps/admin/package.json
+  ⚠️  LIKELY_VULNERABLE
+      - posthog-node@5.11.3 (in packages/backend/package.json)
+  ⚠️  WARNINGS:
+      - packages/frontend/pnpm-lock.yaml: Failed to fetch (may be >1MB)
+
+[2/150] Scanning: betterment/infected-repo
   ⚠️  CONFIRMED_INFECTED
       - runner: SHA1HULUD
       - workflow: formatter_123456789.yml
 
-[2/150] Scanning: betterment/another-repo
-  ⚠️  LIKELY_VULNERABLE
-      - posthog-node@5.11.3
-
 [3/150] Scanning: betterment/safe-repo
   ℹ️  HAS_AFFECTED_PACKAGES (safe versions)
-      - posthog-node@^6.0.0 (malicious: 5.11.3, 5.13.3, 4.18.1)
+      - posthog-node@^6.0.0 (malicious: 5.11.3, 5.13.3, 4.18.1) (in package.json)
 
 [4/150] Scanning: betterment/clean-repo
   ✓ Clean
@@ -87,7 +98,27 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
   },
   "findings": {
     "confirmed_infected": [...],
-    "likely_vulnerable": [...],
+    "likely_vulnerable": [
+      {
+        "repo": "betterment/example-monorepo",
+        "vulnerabilities": [
+          {
+            "package": "posthog-node",
+            "declared_version": "5.11.3",
+            "malicious_version": "5.11.3",
+            "match_type": "direct",
+            "severity": "high",
+            "package_json_path": "packages/backend/package.json"
+          }
+        ],
+        "warnings": [
+          {
+            "path": "packages/frontend/pnpm-lock.yaml",
+            "error": "Failed to fetch (may be >1MB)"
+          }
+        ]
+      }
+    ],
     "potentially_at_risk": [...],
     "has_affected_packages": [
       {
@@ -96,9 +127,11 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
           {
             "package": "posthog-node",
             "declared_version": "^6.0.0",
-            "malicious_versions": ["5.11.3", "5.13.3", "4.18.1"]
+            "malicious_versions": ["5.11.3", "5.13.3", "4.18.1"],
+            "package_json_path": "package.json"
           }
-        ]
+        ],
+        "warnings": []
       }
     ]
   },
@@ -107,6 +140,18 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
 ```
 
 The `has_affected_packages` array lists repos that use packages from the affected list, but at versions that don't match the known malicious versions. This helps identify repos for ongoing monitoring in case new vulnerabilities are discovered.
+
+### Monorepo Support
+
+The scanner automatically detects monorepo structures by:
+1. Using GitHub's Git Trees API to recursively find all `package.json` files
+2. For each `package.json`, looking for lock files in the same directory
+3. Aggregating findings across all packages in the repository
+4. Including the `package_json_path` field in results to identify which package has the issue
+
+**Limitations:**
+- Lock files must be <1MB (GitHub API limit) - larger files will be flagged with warnings
+- Very large repositories with >100,000 files may have truncated tree responses
 
 ## Testing
 
