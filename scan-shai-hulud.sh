@@ -134,7 +134,7 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
 
     echo "[$((SCANNED + 1))/$TOTAL_REPOS] Scanning: $FULL_NAME"
 
-    # Get git tree recursively to find all package.json files
+    # Get git tree recursively to find all npm-related files
     TREE_RESULT=$(gh api "/repos/$FULL_NAME/git/trees/$DEFAULT_BRANCH?recursive=1" 2>/dev/null || echo "")
 
     if [ -z "$TREE_RESULT" ]; then
@@ -152,8 +152,20 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
     # Find all package.json paths
     PACKAGE_PATHS=$(echo "$TREE_RESULT" | jq -r '.tree[]? | select(.path | endswith("package.json")) | .path')
 
+    # Also check for lock files (to detect repos with lock files but no package.json)
+    LOCK_FILES_FOUND=$(echo "$TREE_RESULT" | jq -r '.tree[]? | select(.path | test("package-lock\\.json$|yarn\\.lock$|pnpm-lock\\.yaml$")) | .path')
+
     if [ -z "$PACKAGE_PATHS" ]; then
-        echo "  → No package.json found"
+        if [ -n "$LOCK_FILES_FOUND" ]; then
+            # Found lock files but no package.json - this is unusual
+            echo "  ⚠️  WARNING: Found lock files without package.json:"
+            echo "$LOCK_FILES_FOUND" | while read -r lock_file; do
+                echo "      - $lock_file"
+            done
+            echo "  → Cannot scan without package.json (orphaned lock files)"
+        else
+            echo "  → No npm files found (no package.json or lock files)"
+        fi
         SCANNED=$((SCANNED + 1))
         continue
     fi

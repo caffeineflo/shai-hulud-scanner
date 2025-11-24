@@ -10,6 +10,7 @@ This scanner detects:
   - Checks `package.json` for direct dependencies
   - Checks `package-lock.json`, `yarn.lock`, and `pnpm-lock.yaml` for exact locked versions (including transitive dependencies)
   - Lock files must be in the same directory as `package.json` (typical for monorepo workspaces)
+  - **Orphaned lock files**: Warns about lock files without corresponding `package.json` (cannot be scanned)
 - **Active infections**: SHA1HULUD runners, malicious workflows, suspicious repo descriptions
 - **File fetch issues**: Warns when files fail to fetch (e.g., >1MB lock files exceed GitHub API limits)
 
@@ -76,8 +77,17 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
   ℹ️  HAS_AFFECTED_PACKAGES (safe versions)
       - posthog-node@^6.0.0 (malicious: 5.11.3, 5.13.3, 4.18.1) (in package.json)
 
-[4/150] Scanning: betterment/clean-repo
+[4/150] Scanning: betterment/orphaned-locks
+  ⚠️  WARNING: Found lock files without package.json:
+      - old/package-lock.json
+      - legacy/yarn.lock
+  → Cannot scan without package.json (orphaned lock files)
+
+[5/150] Scanning: betterment/clean-repo
   ✓ Clean
+
+[6/150] Scanning: betterment/non-npm-repo
+  → No npm files found (no package.json or lock files)
 ```
 
 **Status Meanings:**
@@ -149,9 +159,19 @@ The scanner automatically detects monorepo structures by:
 3. Aggregating findings across all packages in the repository
 4. Including the `package_json_path` field in results to identify which package has the issue
 
+**Orphaned Lock Files:**
+
+The scanner detects lock files from any package manager (npm, Yarn, or pnpm) that exist without a corresponding `package.json` in any directory. These cannot be scanned because:
+- Without `package.json`, we don't know which dependencies were intentionally installed vs transitive
+- Lock files alone don't indicate the project's dependency intent
+- These are typically artifacts from deleted/moved package.json files
+
+The scanner will warn about these files but skip scanning them.
+
 **Limitations:**
 - Lock files must be <1MB (GitHub API limit) - larger files will be flagged with warnings
 - Very large repositories with >100,000 files may have truncated tree responses
+- Orphaned lock files (without package.json) cannot be scanned
 
 ## Testing
 
