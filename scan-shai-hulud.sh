@@ -143,13 +143,33 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
         continue
     fi
 
-    # Check dependencies
+    # Fetch lock files
+    PACKAGE_LOCK=$(gh api "/repos/$FULL_NAME/contents/package-lock.json" \
+        --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo "")
+
+    YARN_LOCK=$(gh api "/repos/$FULL_NAME/contents/yarn.lock" \
+        --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo "")
+
+    PNPM_LOCK=$(gh api "/repos/$FULL_NAME/contents/pnpm-lock.yaml" \
+        --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo "")
+
+    # Check dependencies with lock files
     DEP_FINDINGS=$(node -e "
         const { checkDependencies } = require('./lib/check-dependencies');
         const fs = require('fs');
         const malicious = JSON.parse(fs.readFileSync('shai_hulud_packages.json', 'utf8'));
         const packageJson = \`$PACKAGE_JSON\`;
-        const findings = checkDependencies(packageJson, null, malicious);
+
+        const lockFiles = [];
+        const packageLock = \`$PACKAGE_LOCK\`;
+        const yarnLock = \`$YARN_LOCK\`;
+        const pnpmLock = \`$PNPM_LOCK\`;
+
+        if (packageLock) lockFiles.push({ type: 'package-lock.json', content: packageLock });
+        if (yarnLock) lockFiles.push({ type: 'yarn.lock', content: yarnLock });
+        if (pnpmLock) lockFiles.push({ type: 'pnpm-lock.yaml', content: pnpmLock });
+
+        const findings = checkDependencies(packageJson, lockFiles.length > 0 ? lockFiles : null, malicious);
         console.log(JSON.stringify(findings));
     " 2>/dev/null || echo "[]")
 
