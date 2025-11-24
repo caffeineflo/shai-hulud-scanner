@@ -1,0 +1,10 @@
+{
+  "name": "test-repo",
+  "dependencies": {
+    "posthog-node": "^5.0.0",
+    "safe-package": "^1.0.0"
+  },
+  "devDependencies": {
+    "@asyncapi/specs": "6.8.2"
+  }
+}
