@@ -1,0 +1,1882 @@
+[
+  {
+    "package": "@zapier/zapier-sdk",
+    "version": "0.15.5",
+    "weeklyDownloads": 2636363
+  },
+  {
+    "package": "@zapier/zapier-sdk",
+    "version": "0.15.7",
+    "weeklyDownloads": 2636363
+  },
+  {
+    "package": "@posthog/core",
+    "version": "1.5.6",
+    "weeklyDownloads": 1983172
+  },
+  {
+    "package": "posthog-node",
+    "version": "5.11.3",
+    "weeklyDownloads": 1551681
+  },
+  {
+    "package": "posthog-node",
+    "version": "5.13.3",
+    "weeklyDownloads": 1551681
+  },
+  {
+    "package": "posthog-node",
+    "version": "4.18.1",
+    "weeklyDownloads": 1551681
+  },
+  {
+    "package": "@asyncapi/specs",
+    "version": "6.10.1",
+    "weeklyDownloads": 1439127
+  },
+  {
+    "package": "@asyncapi/specs",
+    "version": "6.8.2",
+    "weeklyDownloads": 1439127
+  },
+  {
+    "package": "@asyncapi/specs",
+    "version": "6.9.1",
+    "weeklyDownloads": 1439127
+  },
+  {
+    "package": "@asyncapi/specs",
+    "version": "6.8.3",
+    "weeklyDownloads": 1439127
+  },
+  {
+    "package": "@postman/tunnel-agent",
+    "version": "0.6.6",
+    "weeklyDownloads": 1222937
+  },
+  {
+    "package": "@postman/tunnel-agent",
+    "version": "0.6.5",
+    "weeklyDownloads": 1222937
+  },
+  {
+    "package": "posthog-react-native",
+    "version": "4.12.5",
+    "weeklyDownloads": 552084
+  },
+  {
+    "package": "posthog-react-native",
+    "version": "4.11.1",
+    "weeklyDownloads": 552084
+  },
+  {
+    "package": "@asyncapi/parser",
+    "version": "3.4.1",
+    "weeklyDownloads": 454054
+  },
+  {
+    "package": "@asyncapi/parser",
+    "version": "3.4.2",
+    "weeklyDownloads": 454054
+  },
+  {
+    "package": "@asyncapi/openapi-schema-parser",
+    "version": "3.0.25",
+    "weeklyDownloads": 172615
+  },
+  {
+    "package": "@asyncapi/avro-schema-parser",
+    "version": "3.0.25",
+    "weeklyDownloads": 163621
+  },
+  {
+    "package": "@asyncapi/avro-schema-parser",
+    "version": "3.0.26",
+    "weeklyDownloads": 163621
+  },
+  {
+    "package": "@asyncapi/protobuf-schema-parser",
+    "version": "3.6.1",
+    "weeklyDownloads": 141222
+  },
+  {
+    "package": "@asyncapi/protobuf-schema-parser",
+    "version": "3.5.3",
+    "weeklyDownloads": 141222
+  },
+  {
+    "package": "@asyncapi/react-component",
+    "version": "2.6.6",
+    "weeklyDownloads": 130613
+  },
+  {
+    "package": "@asyncapi/generator",
+    "version": "2.8.5",
+    "weeklyDownloads": 83589
+  },
+  {
+    "package": "@posthog/ai",
+    "version": "7.1.2",
+    "weeklyDownloads": 70906
+  },
+  {
+    "package": "@asyncapi/modelina",
+    "version": "5.10.2",
+    "weeklyDownloads": 68730
+  },
+  {
+    "package": "@asyncapi/modelina",
+    "version": "5.10.3",
+    "weeklyDownloads": 68730
+  },
+  {
+    "package": "@asyncapi/generator-react-sdk",
+    "version": "1.1.4",
+    "weeklyDownloads": 67985
+  },
+  {
+    "package": "@asyncapi/generator-react-sdk",
+    "version": "1.1.5",
+    "weeklyDownloads": 67985
+  },
+  {
+    "package": "@postman/csv-parse",
+    "version": "4.0.3",
+    "weeklyDownloads": 57070
+  },
+  {
+    "package": "@postman/csv-parse",
+    "version": "4.0.4",
+    "weeklyDownloads": 57070
+  },
+  {
+    "package": "@postman/csv-parse",
+    "version": "4.0.5",
+    "weeklyDownloads": 57070
+  },
+  {
+    "package": "posthog-react-native-session-replay",
+    "version": "1.2.2",
+    "weeklyDownloads": 56023
+  },
+  {
+    "package": "@asyncapi/converter",
+    "version": "1.6.3",
+    "weeklyDownloads": 51156
+  },
+  {
+    "package": "@asyncapi/multi-parser",
+    "version": "2.2.1",
+    "weeklyDownloads": 49289
+  },
+  {
+    "package": "@asyncapi/multi-parser",
+    "version": "2.2.2",
+    "weeklyDownloads": 49289
+  },
+  {
+    "package": "@posthog/cli",
+    "version": "0.5.15",
+    "weeklyDownloads": 49272
+  },
+  {
+    "package": "@zapier/secret-scrubber",
+    "version": "1.1.3",
+    "weeklyDownloads": 42438
+  },
+  {
+    "package": "@zapier/secret-scrubber",
+    "version": "1.1.4",
+    "weeklyDownloads": 42438
+  },
+  {
+    "package": "@zapier/secret-scrubber",
+    "version": "1.1.5",
+    "weeklyDownloads": 42438
+  },
+  {
+    "package": "zapier-platform-schema",
+    "version": "18.0.2",
+    "weeklyDownloads": 38559
+  },
+  {
+    "package": "zapier-platform-core",
+    "version": "18.0.2",
+    "weeklyDownloads": 38186
+  },
+  {
+    "package": "zapier-platform-core",
+    "version": "18.0.3",
+    "weeklyDownloads": 38186
+  },
+  {
+    "package": "@ensdomains/address-encoder",
+    "version": "1.1.5",
+    "weeklyDownloads": 37524
+  },
+  {
+    "package": "@ensdomains/content-hash",
+    "version": "3.0.1",
+    "weeklyDownloads": 35779
+  },
+  {
+    "package": "crypto-addr-codec",
+    "version": "0.1.9",
+    "weeklyDownloads": 34882
+  },
+  {
+    "package": "@asyncapi/nunjucks-filters",
+    "version": "2.1.1",
+    "weeklyDownloads": 34226
+  },
+  {
+    "package": "@asyncapi/nunjucks-filters",
+    "version": "2.1.2",
+    "weeklyDownloads": 34226
+  },
+  {
+    "package": "@asyncapi/bundler",
+    "version": "0.6.5",
+    "weeklyDownloads": 33328
+  },
+  {
+    "package": "@asyncapi/bundler",
+    "version": "0.6.6",
+    "weeklyDownloads": 33328
+  },
+  {
+    "package": "@posthog/nextjs-config",
+    "version": "1.5.1",
+    "weeklyDownloads": 33129
+  },
+  {
+    "package": "@asyncapi/html-template",
+    "version": "3.3.2",
+    "weeklyDownloads": 30340
+  },
+  {
+    "package": "@asyncapi/html-template",
+    "version": "3.3.3",
+    "weeklyDownloads": 30340
+  },
+  {
+    "package": "@asyncapi/diff",
+    "version": "0.5.1",
+    "weeklyDownloads": 29988
+  },
+  {
+    "package": "@asyncapi/diff",
+    "version": "0.5.2",
+    "weeklyDownloads": 29988
+  },
+  {
+    "package": "@asyncapi/cli",
+    "version": "4.1.2",
+    "weeklyDownloads": 29857
+  },
+  {
+    "package": "@asyncapi/optimizer",
+    "version": "1.0.5",
+    "weeklyDownloads": 28860
+  },
+  {
+    "package": "@asyncapi/optimizer",
+    "version": "1.0.6",
+    "weeklyDownloads": 28860
+  },
+  {
+    "package": "@asyncapi/modelina-cli",
+    "version": "5.10.2",
+    "weeklyDownloads": 28041
+  },
+  {
+    "package": "@asyncapi/modelina-cli",
+    "version": "5.10.3",
+    "weeklyDownloads": 28041
+  },
+  {
+    "package": "@postman/aether-icons",
+    "version": "2.23.2",
+    "weeklyDownloads": 25176
+  },
+  {
+    "package": "@postman/aether-icons",
+    "version": "2.23.4",
+    "weeklyDownloads": 25176
+  },
+  {
+    "package": "@asyncapi/generator-components",
+    "version": "0.3.2",
+    "weeklyDownloads": 23453
+  },
+  {
+    "package": "@asyncapi/generator-helpers",
+    "version": "0.2.1",
+    "weeklyDownloads": 21886
+  },
+  {
+    "package": "@asyncapi/generator-helpers",
+    "version": "0.2.2",
+    "weeklyDownloads": 21886
+  },
+  {
+    "package": "zapier-platform-cli",
+    "version": "18.0.3",
+    "weeklyDownloads": 21470
+  },
+  {
+    "package": "@posthog/rrweb",
+    "version": "0.0.31",
+    "weeklyDownloads": 12666
+  },
+  {
+    "package": "ethereum-ens",
+    "version": "0.8.1",
+    "weeklyDownloads": 12656
+  },
+  {
+    "package": "@posthog/rrweb-utils",
+    "version": "0.0.31",
+    "weeklyDownloads": 12630
+  },
+  {
+    "package": "@posthog/rrweb-snapshot",
+    "version": "0.0.31",
+    "weeklyDownloads": 12629
+  },
+  {
+    "package": "@posthog/rrdom",
+    "version": "0.0.31",
+    "weeklyDownloads": 12627
+  },
+  {
+    "package": "@asyncapi/problem",
+    "version": "1.0.1",
+    "weeklyDownloads": 12111
+  },
+  {
+    "package": "@asyncapi/problem",
+    "version": "1.0.2",
+    "weeklyDownloads": 12111
+  },
+  {
+    "package": "@postman/secret-scanner-wasm",
+    "version": "2.1.3",
+    "weeklyDownloads": 9731
+  },
+  {
+    "package": "@postman/secret-scanner-wasm",
+    "version": "2.1.2",
+    "weeklyDownloads": 9731
+  },
+  {
+    "package": "@postman/secret-scanner-wasm",
+    "version": "2.1.4",
+    "weeklyDownloads": 9731
+  },
+  {
+    "package": "@ensdomains/eth-ens-namehash",
+    "version": "2.0.16",
+    "weeklyDownloads": 8578
+  },
+  {
+    "package": "posthog-docusaurus",
+    "version": "2.0.6",
+    "weeklyDownloads": 6432
+  },
+  {
+    "package": "@postman/pretty-ms",
+    "version": "6.1.1",
+    "weeklyDownloads": 4587
+  },
+  {
+    "package": "@postman/pretty-ms",
+    "version": "6.1.3",
+    "weeklyDownloads": 4587
+  },
+  {
+    "package": "@postman/pretty-ms",
+    "version": "6.1.2",
+    "weeklyDownloads": 4587
+  },
+  {
+    "package": "web-types-lit",
+    "version": "0.1.1",
+    "weeklyDownloads": 4482
+  },
+  {
+    "package": "mcp-use",
+    "version": "1.4.2",
+    "weeklyDownloads": 4071
+  },
+  {
+    "package": "mcp-use",
+    "version": "1.4.3",
+    "weeklyDownloads": 4071
+  },
+  {
+    "package": "@posthog/react-rrweb-player",
+    "version": "1.1.4",
+    "weeklyDownloads": 4062
+  },
+  {
+    "package": "@asyncapi/markdown-template",
+    "version": "1.6.8",
+    "weeklyDownloads": 3630
+  },
+  {
+    "package": "@asyncapi/markdown-template",
+    "version": "1.6.9",
+    "weeklyDownloads": 3630
+  },
+  {
+    "package": "@ensdomains/buffer",
+    "version": "0.1.2",
+    "weeklyDownloads": 3493
+  },
+  {
+    "package": "@postman/node-keytar",
+    "version": "7.9.4",
+    "weeklyDownloads": 3453
+  },
+  {
+    "package": "@postman/node-keytar",
+    "version": "7.9.5",
+    "weeklyDownloads": 3453
+  },
+  {
+    "package": "@postman/node-keytar",
+    "version": "7.9.6",
+    "weeklyDownloads": 3453
+  },
+  {
+    "package": "@mcp-use/inspector",
+    "version": "0.6.2",
+    "weeklyDownloads": 3439
+  },
+  {
+    "package": "@mcp-use/inspector",
+    "version": "0.6.3",
+    "weeklyDownloads": 3439
+  },
+  {
+    "package": "@mcp-use/cli",
+    "version": "2.2.6",
+    "weeklyDownloads": 3327
+  },
+  {
+    "package": "@zapier/spectral-api-ruleset",
+    "version": "1.9.1",
+    "weeklyDownloads": 3209
+  },
+  {
+    "package": "@zapier/spectral-api-ruleset",
+    "version": "1.9.2",
+    "weeklyDownloads": 3209
+  },
+  {
+    "package": "@zapier/spectral-api-ruleset",
+    "version": "1.9.3",
+    "weeklyDownloads": 3209
+  },
+  {
+    "package": "@posthog/geoip-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 3051
+  },
+  {
+    "package": "@ensdomains/dnsprovejs",
+    "version": "0.5.3",
+    "weeklyDownloads": 2908
+  },
+  {
+    "package": "@ensdomains/solsha1",
+    "version": "0.0.4",
+    "weeklyDownloads": 2893
+  },
+  {
+    "package": "@asyncapi/web-component",
+    "version": "2.6.6",
+    "weeklyDownloads": 2689
+  },
+  {
+    "package": "@asyncapi/web-component",
+    "version": "2.6.7",
+    "weeklyDownloads": 2689
+  },
+  {
+    "package": "@posthog/nuxt",
+    "version": "1.2.9",
+    "weeklyDownloads": 2362
+  },
+  {
+    "package": "@zapier/browserslist-config-zapier",
+    "version": "1.0.3",
+    "weeklyDownloads": 1961
+  },
+  {
+    "package": "@zapier/browserslist-config-zapier",
+    "version": "1.0.5",
+    "weeklyDownloads": 1961
+  },
+  {
+    "package": "@posthog/wizard",
+    "version": "1.18.1",
+    "weeklyDownloads": 1945
+  },
+  {
+    "package": "react-native-use-modal",
+    "version": "1.0.3",
+    "weeklyDownloads": 1865
+  },
+  {
+    "package": "@asyncapi/java-spring-template",
+    "version": "1.6.1",
+    "weeklyDownloads": 1825
+  },
+  {
+    "package": "@asyncapi/java-spring-template",
+    "version": "1.6.2",
+    "weeklyDownloads": 1825
+  },
+  {
+    "package": "@posthog/rrweb-record",
+    "version": "0.0.31",
+    "weeklyDownloads": 1761
+  },
+  {
+    "package": "@posthog/siphash",
+    "version": "1.1.2",
+    "weeklyDownloads": 1742
+  },
+  {
+    "package": "@posthog/piscina",
+    "version": "3.2.1",
+    "weeklyDownloads": 1741
+  },
+  {
+    "package": "@ensdomains/ens-validation",
+    "version": "0.1.1",
+    "weeklyDownloads": 1734
+  },
+  {
+    "package": "@posthog/plugin-contrib",
+    "version": "0.0.6",
+    "weeklyDownloads": 1732
+  },
+  {
+    "package": "@posthog/agent",
+    "version": "1.24.1",
+    "weeklyDownloads": 1660
+  },
+  {
+    "package": "@postman/postman-mcp-server",
+    "version": "2.4.11",
+    "weeklyDownloads": 1448
+  },
+  {
+    "package": "@postman/postman-mcp-server",
+    "version": "2.4.10",
+    "weeklyDownloads": 1448
+  },
+  {
+    "package": "@asyncapi/nodejs-ws-template",
+    "version": "0.10.1",
+    "weeklyDownloads": 1406
+  },
+  {
+    "package": "@asyncapi/nodejs-ws-template",
+    "version": "0.10.2",
+    "weeklyDownloads": 1406
+  },
+  {
+    "package": "@actbase/react-daum-postcode",
+    "version": "1.0.5",
+    "weeklyDownloads": 1221
+  },
+  {
+    "package": "token.js-fork",
+    "version": "0.7.32",
+    "weeklyDownloads": 1109
+  },
+  {
+    "package": "@postman/pm-bin-windows-x64",
+    "version": "1.24.5",
+    "weeklyDownloads": 708
+  },
+  {
+    "package": "@postman/pm-bin-windows-x64",
+    "version": "1.24.4",
+    "weeklyDownloads": 708
+  },
+  {
+    "package": "@ensdomains/ens-avatar",
+    "version": "1.0.4",
+    "weeklyDownloads": 685
+  },
+  {
+    "package": "@postman/pm-bin-linux-x64",
+    "version": "1.24.3",
+    "weeklyDownloads": 671
+  },
+  {
+    "package": "@postman/pm-bin-linux-x64",
+    "version": "1.24.4",
+    "weeklyDownloads": 671
+  },
+  {
+    "package": "@postman/pm-bin-linux-x64",
+    "version": "1.24.5",
+    "weeklyDownloads": 671
+  },
+  {
+    "package": "@posthog/hedgehog-mode",
+    "version": "0.0.42",
+    "weeklyDownloads": 635
+  },
+  {
+    "package": "create-mcp-use-app",
+    "version": "0.5.3",
+    "weeklyDownloads": 521
+  },
+  {
+    "package": "create-mcp-use-app",
+    "version": "0.5.4",
+    "weeklyDownloads": 521
+  },
+  {
+    "package": "@postman/pm-bin-macos-arm64",
+    "version": "1.24.5",
+    "weeklyDownloads": 469
+  },
+  {
+    "package": "@postman/pm-bin-macos-arm64",
+    "version": "1.24.3",
+    "weeklyDownloads": 469
+  },
+  {
+    "package": "@postman/pm-bin-macos-arm64",
+    "version": "1.24.4",
+    "weeklyDownloads": 469
+  },
+  {
+    "package": "@posthog/nextjs",
+    "version": "0.0.3",
+    "weeklyDownloads": 401
+  },
+  {
+    "package": "@postman/pm-bin-macos-x64",
+    "version": "1.24.3",
+    "weeklyDownloads": 337
+  },
+  {
+    "package": "@postman/pm-bin-macos-x64",
+    "version": "1.24.5",
+    "weeklyDownloads": 337
+  },
+  {
+    "package": "redux-router-kit",
+    "version": "1.2.2",
+    "weeklyDownloads": 320
+  },
+  {
+    "package": "redux-router-kit",
+    "version": "1.2.3",
+    "weeklyDownloads": 320
+  },
+  {
+    "package": "redux-router-kit",
+    "version": "1.2.4",
+    "weeklyDownloads": 320
+  },
+  {
+    "package": "@ensdomains/dnssecoraclejs",
+    "version": "0.2.9",
+    "weeklyDownloads": 309
+  },
+  {
+    "package": "@postman/mcp-ui-client",
+    "version": "5.5.1",
+    "weeklyDownloads": 270
+  },
+  {
+    "package": "@postman/mcp-ui-client",
+    "version": "5.5.2",
+    "weeklyDownloads": 270
+  },
+  {
+    "package": "@postman/postman-mcp-cli",
+    "version": "1.0.5",
+    "weeklyDownloads": 258
+  },
+  {
+    "package": "@postman/postman-mcp-cli",
+    "version": "1.0.4",
+    "weeklyDownloads": 258
+  },
+  {
+    "package": "@zapier/babel-preset-zapier",
+    "version": "6.4.1",
+    "weeklyDownloads": 256
+  },
+  {
+    "package": "@zapier/babel-preset-zapier",
+    "version": "6.4.3",
+    "weeklyDownloads": 256
+  },
+  {
+    "package": "@ensdomains/thorin",
+    "version": "0.6.51",
+    "weeklyDownloads": 213
+  },
+  {
+    "package": "@postman/postman-collection-fork",
+    "version": "4.3.3",
+    "weeklyDownloads": 195
+  },
+  {
+    "package": "@postman/postman-collection-fork",
+    "version": "4.3.4",
+    "weeklyDownloads": 195
+  },
+  {
+    "package": "@postman/postman-collection-fork",
+    "version": "4.3.5",
+    "weeklyDownloads": 195
+  },
+  {
+    "package": "@asyncapi/nodejs-template",
+    "version": "3.0.5",
+    "weeklyDownloads": 187
+  },
+  {
+    "package": "@postman/wdio-allure-reporter",
+    "version": "0.0.9",
+    "weeklyDownloads": 183
+  },
+  {
+    "package": "@postman/wdio-junit-reporter",
+    "version": "0.0.4",
+    "weeklyDownloads": 181
+  },
+  {
+    "package": "@postman/wdio-junit-reporter",
+    "version": "0.0.6",
+    "weeklyDownloads": 181
+  },
+  {
+    "package": "@postman/final-node-keytar",
+    "version": "7.9.1",
+    "weeklyDownloads": 175
+  },
+  {
+    "package": "@postman/final-node-keytar",
+    "version": "7.9.2",
+    "weeklyDownloads": 175
+  },
+  {
+    "package": "zapier-async-storage",
+    "version": "1.0.1",
+    "weeklyDownloads": 163
+  },
+  {
+    "package": "zapier-async-storage",
+    "version": "1.0.2",
+    "weeklyDownloads": 163
+  },
+  {
+    "package": "zapier-async-storage",
+    "version": "1.0.3",
+    "weeklyDownloads": 163
+  },
+  {
+    "package": "@ensdomains/test-utils",
+    "version": "1.3.1",
+    "weeklyDownloads": 153
+  },
+  {
+    "package": "@ensdomains/hardhat-chai-matchers-viem",
+    "version": "0.1.15",
+    "weeklyDownloads": 148
+  },
+  {
+    "package": "@asyncapi/java-spring-cloud-stream-template",
+    "version": "0.13.5",
+    "weeklyDownloads": 147
+  },
+  {
+    "package": "@asyncapi/java-spring-cloud-stream-template",
+    "version": "0.13.6",
+    "weeklyDownloads": 147
+  },
+  {
+    "package": "@zapier/eslint-plugin-zapier",
+    "version": "11.0.3",
+    "weeklyDownloads": 147
+  },
+  {
+    "package": "@zapier/eslint-plugin-zapier",
+    "version": "11.0.4",
+    "weeklyDownloads": 147
+  },
+  {
+    "package": "@zapier/eslint-plugin-zapier",
+    "version": "11.0.5",
+    "weeklyDownloads": 147
+  },
+  {
+    "package": "devstart-cli",
+    "version": "1.0.6",
+    "weeklyDownloads": 143
+  },
+  {
+    "package": "@asyncapi/java-template",
+    "version": "0.3.5",
+    "weeklyDownloads": 129
+  },
+  {
+    "package": "@asyncapi/java-template",
+    "version": "0.3.6",
+    "weeklyDownloads": 129
+  },
+  {
+    "package": "@asyncapi/go-watermill-template",
+    "version": "0.2.76",
+    "weeklyDownloads": 119
+  },
+  {
+    "package": "@asyncapi/go-watermill-template",
+    "version": "0.2.77",
+    "weeklyDownloads": 119
+  },
+  {
+    "package": "@asyncapi/python-paho-template",
+    "version": "0.2.14",
+    "weeklyDownloads": 112
+  },
+  {
+    "package": "@asyncapi/python-paho-template",
+    "version": "0.2.15",
+    "weeklyDownloads": 112
+  },
+  {
+    "package": "@ensdomains/hardhat-toolbox-viem-extended",
+    "version": "0.0.6",
+    "weeklyDownloads": 106
+  },
+  {
+    "package": "@ensdomains/vite-plugin-i18next-loader",
+    "version": "4.0.4",
+    "weeklyDownloads": 104
+  },
+  {
+    "package": "zapier-platform-legacy-scripting-runner",
+    "version": "4.0.3",
+    "weeklyDownloads": 103
+  },
+  {
+    "package": "zapier-platform-legacy-scripting-runner",
+    "version": "4.0.4",
+    "weeklyDownloads": 103
+  },
+  {
+    "package": "@asyncapi/server-api",
+    "version": "0.16.25",
+    "weeklyDownloads": 91
+  },
+  {
+    "package": "@ensdomains/offchain-resolver-contracts",
+    "version": "0.2.2",
+    "weeklyDownloads": 88
+  },
+  {
+    "package": "@zapier/ai-actions",
+    "version": "0.1.18",
+    "weeklyDownloads": 81
+  },
+  {
+    "package": "@zapier/ai-actions",
+    "version": "0.1.19",
+    "weeklyDownloads": 81
+  },
+  {
+    "package": "@zapier/ai-actions",
+    "version": "0.1.20",
+    "weeklyDownloads": 81
+  },
+  {
+    "package": "@zapier/mcp-integration",
+    "version": "3.0.1",
+    "weeklyDownloads": 74
+  },
+  {
+    "package": "@zapier/mcp-integration",
+    "version": "3.0.3",
+    "weeklyDownloads": 74
+  },
+  {
+    "package": "@ensdomains/ens-archived-contracts",
+    "version": "0.0.3",
+    "weeklyDownloads": 73
+  },
+  {
+    "package": "@ensdomains/dnssec-oracle-anchors",
+    "version": "0.0.2",
+    "weeklyDownloads": 72
+  },
+  {
+    "package": "@ensdomains/mock",
+    "version": "2.1.52",
+    "weeklyDownloads": 66
+  },
+  {
+    "package": "zapier-scripts",
+    "version": "7.8.3",
+    "weeklyDownloads": 65
+  },
+  {
+    "package": "zapier-scripts",
+    "version": "7.8.4",
+    "weeklyDownloads": 65
+  },
+  {
+    "package": "@quick-start-soft/quick-task-refine",
+    "version": "1.4.2511142126",
+    "weeklyDownloads": 56
+  },
+  {
+    "package": "@zapier/ai-actions-react",
+    "version": "0.1.13",
+    "weeklyDownloads": 54
+  },
+  {
+    "package": "@zapier/ai-actions-react",
+    "version": "0.1.14",
+    "weeklyDownloads": 54
+  },
+  {
+    "package": "@quick-start-soft/quick-git-clean-markdown",
+    "version": "1.4.2511142126",
+    "weeklyDownloads": 49
+  },
+  {
+    "package": "@ensdomains/ui",
+    "version": "3.4.6",
+    "weeklyDownloads": 49
+  },
+  {
+    "package": "@quick-start-soft/quick-markdown",
+    "version": "1.4.2511142126",
+    "weeklyDownloads": 47
+  },
+  {
+    "package": "@zapier/stubtree",
+    "version": "0.1.3",
+    "weeklyDownloads": 46
+  },
+  {
+    "package": "@ensdomains/unruggable-gateways",
+    "version": "0.0.3",
+    "weeklyDownloads": 30
+  },
+  {
+    "package": "@posthog/rrweb-player",
+    "version": "0.0.31",
+    "weeklyDownloads": 26
+  },
+  {
+    "package": "@asyncapi/dotnet-rabbitmq-template",
+    "version": "1.0.1",
+    "weeklyDownloads": 25
+  },
+  {
+    "package": "@asyncapi/dotnet-rabbitmq-template",
+    "version": "1.0.2",
+    "weeklyDownloads": 25
+  },
+  {
+    "package": "@ensdomains/react-ens-address",
+    "version": "0.0.32",
+    "weeklyDownloads": 24
+  },
+  {
+    "package": "@asyncapi/php-template",
+    "version": "0.1.1",
+    "weeklyDownloads": 21
+  },
+  {
+    "package": "@quick-start-soft/quick-document-translator",
+    "version": "1.4.2511142126",
+    "weeklyDownloads": 20
+  },
+  {
+    "package": "@quick-start-soft/quick-markdown-image",
+    "version": "1.4.2511142126",
+    "weeklyDownloads": 20
+  },
+  {
+    "package": "@strapbuild/react-native-date-time-picker",
+    "version": "2.0.4",
+    "weeklyDownloads": 17
+  },
+  {
+    "package": "github-action-for-generator",
+    "version": "2.1.28",
+    "weeklyDownloads": 17
+  },
+  {
+    "package": "@actbase/react-kakaosdk",
+    "version": "0.9.27",
+    "weeklyDownloads": 16
+  },
+  {
+    "package": "bytecode-checker-cli",
+    "version": "1.0.8",
+    "weeklyDownloads": 16
+  },
+  {
+    "package": "@markvivanco/app-version-checker",
+    "version": "1.0.1",
+    "weeklyDownloads": 16
+  },
+  {
+    "package": "bytecode-checker-cli",
+    "version": "1.0.9",
+    "weeklyDownloads": 16
+  },
+  {
+    "package": "@markvivanco/app-version-checker",
+    "version": "1.0.2",
+    "weeklyDownloads": 16
+  },
+  {
+    "package": "bytecode-checker-cli",
+    "version": "1.0.10",
+    "weeklyDownloads": 16
+  },
+  {
+    "package": "@louisle2/cortex-js",
+    "version": "0.1.6",
+    "weeklyDownloads": 16
+  },
+  {
+    "package": "orbit-boxicons",
+    "version": "2.1.3",
+    "weeklyDownloads": 16
+  },
+  {
+    "package": "react-native-worklet-functions",
+    "version": "3.3.3",
+    "weeklyDownloads": 15
+  },
+  {
+    "package": "poper-react-sdk",
+    "version": "0.1.2",
+    "weeklyDownloads": 13
+  },
+  {
+    "package": "@ensdomains/web3modal",
+    "version": "1.10.2",
+    "weeklyDownloads": 13
+  },
+  {
+    "package": "gate-evm-tools-test",
+    "version": "1.0.5",
+    "weeklyDownloads": 12
+  },
+  {
+    "package": "n8n-nodes-tmdb",
+    "version": "0.5.1",
+    "weeklyDownloads": 12
+  },
+  {
+    "package": "gate-evm-tools-test",
+    "version": "1.0.6",
+    "weeklyDownloads": 12
+  },
+  {
+    "package": "gate-evm-tools-test",
+    "version": "1.0.7",
+    "weeklyDownloads": 12
+  },
+  {
+    "package": "capacitor-plugin-purchase",
+    "version": "0.1.1",
+    "weeklyDownloads": 11
+  },
+  {
+    "package": "expo-audio-session",
+    "version": "0.2.1",
+    "weeklyDownloads": 9
+  },
+  {
+    "package": "capacitor-plugin-apptrackingios",
+    "version": "0.0.21",
+    "weeklyDownloads": 9
+  },
+  {
+    "package": "asyncapi-preview",
+    "version": "1.0.1",
+    "weeklyDownloads": 8
+  },
+  {
+    "package": "asyncapi-preview",
+    "version": "1.0.2",
+    "weeklyDownloads": 8
+  },
+  {
+    "package": "@actbase/react-absolute",
+    "version": "0.8.3",
+    "weeklyDownloads": 8
+  },
+  {
+    "package": "@actbase/react-native-devtools",
+    "version": "0.1.3",
+    "weeklyDownloads": 8
+  },
+  {
+    "package": "@posthog/variance-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 7
+  },
+  {
+    "package": "@posthog/twitter-followers-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 6
+  },
+  {
+    "package": "medusa-plugin-momo",
+    "version": "0.0.68",
+    "weeklyDownloads": 6
+  },
+  {
+    "package": "scgs-capacitor-subscribe",
+    "version": "1.0.11",
+    "weeklyDownloads": 6
+  },
+  {
+    "package": "gate-evm-check-code2",
+    "version": "2.0.3",
+    "weeklyDownloads": 6
+  },
+  {
+    "package": "gate-evm-check-code2",
+    "version": "2.0.4",
+    "weeklyDownloads": 6
+  },
+  {
+    "package": "gate-evm-check-code2",
+    "version": "2.0.5",
+    "weeklyDownloads": 6
+  },
+  {
+    "package": "lite-serper-mcp-server",
+    "version": "0.2.2",
+    "weeklyDownloads": 6
+  },
+  {
+    "package": "@asyncapi/edavisualiser",
+    "version": "1.2.1",
+    "weeklyDownloads": 5
+  },
+  {
+    "package": "@asyncapi/edavisualiser",
+    "version": "1.2.2",
+    "weeklyDownloads": 5
+  },
+  {
+    "package": "esbuild-plugin-eta",
+    "version": "0.1.1",
+    "weeklyDownloads": 5
+  },
+  {
+    "package": "@ensdomains/server-analytics",
+    "version": "0.0.2",
+    "weeklyDownloads": 5
+  },
+  {
+    "package": "zuper-stream",
+    "version": "2.0.9",
+    "weeklyDownloads": 5
+  },
+  {
+    "package": "@quick-start-soft/quick-markdown-compose",
+    "version": "1.4.2506300029",
+    "weeklyDownloads": 4
+  },
+  {
+    "package": "@posthog/snowflake-export-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 4
+  },
+  {
+    "package": "@actbase/react-native-kakao-channel",
+    "version": "1.0.2",
+    "weeklyDownloads": 4
+  },
+  {
+    "package": "@posthog/sendgrid-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 4
+  },
+  {
+    "package": "evm-checkcode-cli",
+    "version": "1.0.12",
+    "weeklyDownloads": 4
+  },
+  {
+    "package": "@ensdomains/subdomain-registrar",
+    "version": "0.2.4",
+    "weeklyDownloads": 4
+  },
+  {
+    "package": "claude-token-updater",
+    "version": "1.0.3",
+    "weeklyDownloads": 4
+  },
+  {
+    "package": "evm-checkcode-cli",
+    "version": "1.0.13",
+    "weeklyDownloads": 4
+  },
+  {
+    "package": "evm-checkcode-cli",
+    "version": "1.0.14",
+    "weeklyDownloads": 4
+  },
+  {
+    "package": "@trigo/atrix-pubsub",
+    "version": "4.0.3",
+    "weeklyDownloads": 4
+  },
+  {
+    "package": "@trigo/hapi-auth-signedlink",
+    "version": "1.3.1",
+    "weeklyDownloads": 4
+  },
+  {
+    "package": "@strapbuild/react-native-perspective-image-cropper-poojan31",
+    "version": "0.4.6",
+    "weeklyDownloads": 3
+  },
+  {
+    "package": "axios-builder",
+    "version": "1.2.1",
+    "weeklyDownloads": 3
+  },
+  {
+    "package": "calc-loan-interest",
+    "version": "1.0.4",
+    "weeklyDownloads": 3
+  },
+  {
+    "package": "medusa-plugin-announcement",
+    "version": "0.0.3",
+    "weeklyDownloads": 3
+  },
+  {
+    "package": "open2internet",
+    "version": "0.1.1",
+    "weeklyDownloads": 3
+  },
+  {
+    "package": "@ensdomains/cypress-metamask",
+    "version": "1.2.1",
+    "weeklyDownloads": 3
+  },
+  {
+    "package": "@ensdomains/renewal",
+    "version": "0.0.13",
+    "weeklyDownloads": 3
+  },
+  {
+    "package": "cpu-instructions",
+    "version": "0.0.14",
+    "weeklyDownloads": 3
+  },
+  {
+    "package": "orbit-soap",
+    "version": "0.43.13",
+    "weeklyDownloads": 3
+  },
+  {
+    "package": "@asyncapi/keeper",
+    "version": "0.0.2",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "@strapbuild/react-native-perspective-image-cropper-2",
+    "version": "0.4.7",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "@actbase/react-native-actionsheet",
+    "version": "1.0.3",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "@posthog/ingestion-alert-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "@actbase/react-native-simple-video",
+    "version": "1.0.13",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "@actbase/react-native-kakao-navi",
+    "version": "2.0.4",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "medusa-plugin-zalopay",
+    "version": "0.0.40",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "@kvytech/medusa-plugin-newsletter",
+    "version": "0.0.5",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "@posthog/databricks-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "@asyncapi/keeper",
+    "version": "0.0.3",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "capacitor-voice-recorder-wav",
+    "version": "6.0.3",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "create-hardhat3-app",
+    "version": "1.1.1",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "rollup-plugin-httpfile",
+    "version": "0.2.1",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "@ensdomains/name-wrapper",
+    "version": "1.0.1",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "create-hardhat3-app",
+    "version": "1.1.2",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "test-foundry-app",
+    "version": "1.0.3",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "jan-browser",
+    "version": "0.13.1",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "@mparpaillon/page",
+    "version": "1.0.1",
+    "weeklyDownloads": 2
+  },
+  {
+    "package": "go-template",
+    "version": "0.1.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@strapbuild/react-native-perspective-image-cropper",
+    "version": "0.4.15",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "manual-billing-system-miniapp-api",
+    "version": "1.3.1",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "korea-administrative-area-geo-json-util",
+    "version": "1.0.7",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/currency-normalization-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/web-dev-server",
+    "version": "1.0.5",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/pagerduty-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/event-sequence-timer-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/automatic-cohorts-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/first-time-event-tracker",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@actbase/css-to-react-native-transform",
+    "version": "1.0.3",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/url-normalizer-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/twilio-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@actbase/node-server",
+    "version": "1.1.19",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/gitub-star-sync-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@seung-ju/react-native-action-sheet",
+    "version": "0.2.1",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/maxmind-plugin",
+    "version": "0.1.6",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/github-release-tracking-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@actbase/react-native-fast-image",
+    "version": "8.5.13",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/customerio-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/kinesis-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@actbase/react-native-less-transformer",
+    "version": "1.0.6",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/taxonomy-plugin",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "medusa-plugin-product-reviews-kvy",
+    "version": "0.0.4",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@aryanhussain/my-angular-lib",
+    "version": "0.0.23",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "dotnet-template",
+    "version": "0.0.4",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "capacitor-plugin-scgssigninwithgoogle",
+    "version": "0.0.5",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "capacitor-purchase-history",
+    "version": "0.0.10",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@posthog/plugin-unduplicates",
+    "version": "0.0.8",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "posthog-plugin-hello-world",
+    "version": "1.0.1",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "esbuild-plugin-httpfile",
+    "version": "0.4.1",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@ensdomains/blacklist",
+    "version": "1.0.1",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@ensdomains/renewal-widget",
+    "version": "0.1.10",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@ensdomains/hackathon-registrar",
+    "version": "1.0.5",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@ensdomains/ccip-read-router",
+    "version": "0.0.7",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@mcp-use/mcp-use",
+    "version": "1.0.1",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "test-hardhat-app",
+    "version": "1.0.3",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "zuper-cli",
+    "version": "1.0.1",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "skills-use",
+    "version": "0.1.2",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "typeorm-orbit",
+    "version": "0.2.27",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "orbit-nebula-editor",
+    "version": "1.0.2",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@trigo/atrix-elasticsearch",
+    "version": "2.0.1",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "@trigo/atrix-soap",
+    "version": "1.0.2",
+    "weeklyDownloads": 1
+  },
+  {
+    "package": "eslint-config-zeallat-base",
+    "version": "1.0.4",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "iron-shield-miniapp",
+    "version": "0.0.2",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "shinhan-limit-scrap",
+    "version": "1.0.3",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "create-glee-app",
+    "version": "0.2.3",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@seung-ju/next",
+    "version": "0.0.2",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@actbase/react-native-tiktok",
+    "version": "1.1.3",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "discord-bot-server",
+    "version": "0.1.2",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@seung-ju/openapi-generator",
+    "version": "0.0.4",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@seung-ju/react-hooks",
+    "version": "0.0.2",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@actbase/react-native-naver-login",
+    "version": "1.0.1",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@kvytech/medusa-plugin-announcement",
+    "version": "0.0.8",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@kvytech/components",
+    "version": "0.0.2",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@kvytech/cli",
+    "version": "0.0.7",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@kvytech/medusa-plugin-management",
+    "version": "0.0.5",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@kvytech/medusa-plugin-product-reviews",
+    "version": "0.0.9",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@kvytech/web",
+    "version": "0.0.2",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "scgsffcreator",
+    "version": "1.0.5",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "vite-plugin-httpfile",
+    "version": "0.2.1",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@ensdomains/curvearithmetics",
+    "version": "1.0.1",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@ensdomains/reverse-records",
+    "version": "1.0.1",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@ensdomains/ccip-read-dns-gateway",
+    "version": "0.1.1",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@ensdomains/unicode-confusables",
+    "version": "0.1.1",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@ensdomains/durin-middleware",
+    "version": "0.0.2",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@ensdomains/ccip-read-worker-viem",
+    "version": "0.0.4",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "atrix",
+    "version": "1.0.1",
+    "weeklyDownloads": 0
+  },
+  {
+    "package": "@caretive/caret-cli",
+    "version": "0.0.2",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "exact-ticker",
+    "version": "0.3.5",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@orbitgtbelgium/orbit-components",
+    "version": "1.2.9",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "react-library-setup",
+    "version": "0.0.6",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@orbitgtbelgium/mapbox-gl-draw-scale-rotate-mode",
+    "version": "1.1.1",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "orbit-nebula-draw-tools",
+    "version": "1.0.10",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@orbitgtbelgium/time-slider",
+    "version": "1.0.187",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "react-element-prompt-inspector",
+    "version": "0.1.18",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/pathfinder-ui-css",
+    "version": "0.1.1",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "eslint-config-trigo",
+    "version": "22.0.2",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/fsm",
+    "version": "3.4.2",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/atrix",
+    "version": "7.0.1",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/atrix-postgres",
+    "version": "1.0.3",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "trigo-react-app",
+    "version": "4.1.2",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/eslint-config-trigo",
+    "version": "3.3.1",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/bool-expressions",
+    "version": "4.1.3",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/trigo-hapijs",
+    "version": "5.0.1",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/node-soap",
+    "version": "0.5.4",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/jsdt",
+    "version": "0.2.1",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "bool-expressions",
+    "version": "0.1.2",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/atrix-redis",
+    "version": "1.0.2",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/atrix-acl",
+    "version": "4.0.2",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/atrix-orientdb",
+    "version": "1.0.2",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/atrix-mongoose",
+    "version": "1.0.2",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "atrix-mongoose",
+    "version": "1.0.1",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "redux-forge",
+    "version": "2.5.3",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@trigo/keycloak-api",
+    "version": "1.3.1",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@mparpaillon/connector-parse",
+    "version": "1.0.1",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@mparpaillon/imagesloaded",
+    "version": "4.1.2",
+    "weeklyDownloads": -1
+  },
+  {
+    "package": "@alaan/s2s-auth",
+    "version": "2.0.3",
+    "weeklyDownloads": -1
+  }
+]
