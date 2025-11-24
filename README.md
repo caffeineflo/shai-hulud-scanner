@@ -86,8 +86,8 @@ ORG_NAME=MyOrg ./scan-shai-hulud.sh
 [5/150] Scanning: betterment/clean-repo
   ✓ Clean
 
-[6/150] Scanning: betterment/non-npm-repo
-  → No npm files found (no package.json or lock files)
+[6/150] Scanning: betterment/non-nodejs-repo
+  → No Node.js packages found (searched for package.json and all lock file types)
 ```
 
 **Status Meanings:**

@@ -164,7 +164,7 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
             done
             echo "  → Cannot scan without package.json (orphaned lock files)"
         else
-            echo "  → No npm files found (no package.json or lock files)"
+            echo "  → No Node.js packages found (searched for package.json and all lock file types)"
         fi
         SCANNED=$((SCANNED + 1))
         continue
