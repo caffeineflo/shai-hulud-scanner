@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Shai-Hulud NPM Malware Scanner
-# Scans Betterment repositories for malicious dependencies and infection indicators
+# Scans GitHub organization repositories for malicious dependencies and infection indicators
 
 set -o errexit
 set -o pipefail
