@@ -155,24 +155,38 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
         --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo "")
 
     # Check dependencies with lock files
+    # Write data to temp files to avoid bash string escaping issues
+    TMP_PKG="/tmp/scan-pkg-$$.json"
+    TMP_LOCK_NPM="/tmp/scan-lock-npm-$$.json"
+    TMP_LOCK_YARN="/tmp/scan-lock-yarn-$$.lock"
+    TMP_LOCK_PNPM="/tmp/scan-lock-pnpm-$$.yaml"
+
+    echo "$PACKAGE_JSON" > "$TMP_PKG"
+    echo "$PACKAGE_LOCK" > "$TMP_LOCK_NPM"
+    echo "$YARN_LOCK" > "$TMP_LOCK_YARN"
+    echo "$PNPM_LOCK" > "$TMP_LOCK_PNPM"
+
     DEP_RESULT=$(node -e "
         const { checkDependencies } = require('./lib/check-dependencies');
         const fs = require('fs');
         const malicious = JSON.parse(fs.readFileSync('shai_hulud_packages.json', 'utf8'));
-        const packageJson = \`$PACKAGE_JSON\`;
+        const packageJson = fs.readFileSync('$TMP_PKG', 'utf8');
 
         const lockFiles = [];
-        const packageLock = \`$PACKAGE_LOCK\`;
-        const yarnLock = \`$YARN_LOCK\`;
-        const pnpmLock = \`$PNPM_LOCK\`;
+        const packageLock = fs.readFileSync('$TMP_LOCK_NPM', 'utf8');
+        const yarnLock = fs.readFileSync('$TMP_LOCK_YARN', 'utf8');
+        const pnpmLock = fs.readFileSync('$TMP_LOCK_PNPM', 'utf8');
 
-        if (packageLock) lockFiles.push({ type: 'package-lock.json', content: packageLock });
-        if (yarnLock) lockFiles.push({ type: 'yarn.lock', content: yarnLock });
-        if (pnpmLock) lockFiles.push({ type: 'pnpm-lock.yaml', content: pnpmLock });
+        if (packageLock.trim()) lockFiles.push({ type: 'package-lock.json', content: packageLock });
+        if (yarnLock.trim()) lockFiles.push({ type: 'yarn.lock', content: yarnLock });
+        if (pnpmLock.trim()) lockFiles.push({ type: 'pnpm-lock.yaml', content: pnpmLock });
 
         const result = checkDependencies(packageJson, lockFiles.length > 0 ? lockFiles : null, malicious);
         console.log(JSON.stringify(result));
     " 2>/dev/null || echo '{"vulnerabilities":[],"affectedPackages":[]}')
+
+    # Cleanup temp files
+    rm -f "$TMP_PKG" "$TMP_LOCK_NPM" "$TMP_LOCK_YARN" "$TMP_LOCK_PNPM"
 
     DEP_FINDINGS=$(echo "$DEP_RESULT" | jq '.vulnerabilities')
     AFFECTED_PKGS=$(echo "$DEP_RESULT" | jq '.affectedPackages')
@@ -186,14 +200,20 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
         --jq '.[] | {name: .name}' 2>/dev/null | jq -s '.' || echo "[]")
 
     # Check infections
+    TMP_DESC="/tmp/scan-desc-$$.txt"
+    echo "$DESCRIPTION" > "$TMP_DESC"
+
     INF_FINDINGS=$(node -e "
         const { checkInfections } = require('./lib/check-infections');
+        const fs = require('fs');
         const runners = $RUNNERS;
         const workflows = $WORKFLOWS;
-        const description = \`$DESCRIPTION\`;
+        const description = fs.readFileSync('$TMP_DESC', 'utf8');
         const findings = checkInfections(runners, workflows, description);
         console.log(JSON.stringify(findings));
     " 2>/dev/null || echo "[]")
+
+    rm -f "$TMP_DESC"
 
     # Classify and report
     if [ "$(echo "$INF_FINDINGS" | jq 'length')" -gt 0 ]; then
