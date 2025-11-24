@@ -37,10 +37,77 @@ function testNoFalsePositives() {
   assert.strictEqual(findings.length, 0, 'Should not flag safe packages');
 }
 
+function testPackageLockDetection() {
+  const packageJson = JSON.stringify({
+    dependencies: { 'posthog-node': '^5.0.0' }
+  });
+
+  const packageLock = fs.readFileSync(
+    path.join(__dirname, 'fixtures/package-lock.json'),
+    'utf8'
+  );
+
+  const maliciousPackages = [
+    { package: 'posthog-node', version: '5.11.3' }
+  ];
+
+  const lockFiles = [{ type: 'package-lock.json', content: packageLock }];
+  const findings = checkDependencies(packageJson, lockFiles, maliciousPackages);
+
+  assert.strictEqual(findings.length, 1, 'Should detect malicious package from lock file');
+  assert.strictEqual(findings[0].package, 'posthog-node');
+  assert.strictEqual(findings[0].malicious_version, '5.11.3');
+}
+
+function testYarnLockDetection() {
+  const packageJson = JSON.stringify({
+    dependencies: { 'posthog-node': '^5.0.0' }
+  });
+
+  const yarnLock = fs.readFileSync(
+    path.join(__dirname, 'fixtures/yarn.lock'),
+    'utf8'
+  );
+
+  const maliciousPackages = [
+    { package: 'posthog-node', version: '5.11.3' }
+  ];
+
+  const lockFiles = [{ type: 'yarn.lock', content: yarnLock }];
+  const findings = checkDependencies(packageJson, lockFiles, maliciousPackages);
+
+  assert.strictEqual(findings.length, 1, 'Should detect malicious package from yarn.lock');
+  assert.strictEqual(findings[0].package, 'posthog-node');
+}
+
+function testPnpmLockDetection() {
+  const packageJson = JSON.stringify({
+    dependencies: { 'posthog-node': '^5.0.0' }
+  });
+
+  const pnpmLock = fs.readFileSync(
+    path.join(__dirname, 'fixtures/pnpm-lock.yaml'),
+    'utf8'
+  );
+
+  const maliciousPackages = [
+    { package: 'posthog-node', version: '5.11.3' }
+  ];
+
+  const lockFiles = [{ type: 'pnpm-lock.yaml', content: pnpmLock }];
+  const findings = checkDependencies(packageJson, lockFiles, maliciousPackages);
+
+  assert.strictEqual(findings.length, 1, 'Should detect malicious package from pnpm-lock.yaml');
+  assert.strictEqual(findings[0].package, 'posthog-node');
+}
+
 function runTests() {
   try {
     testDetectsMaliciousDependency();
     testNoFalsePositives();
+    testPackageLockDetection();
+    testYarnLockDetection();
+    testPnpmLockDetection();
     console.log('✓ All check-dependencies tests passed');
   } catch (err) {
     console.error('✗ Test failed:', err.message);
