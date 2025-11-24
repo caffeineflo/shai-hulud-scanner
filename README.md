@@ -6,6 +6,8 @@ Comprehensive scanner to detect Betterment repositories affected by the Shai-Hul
 
 This scanner detects:
 - **Vulnerable dependencies**: Repos depending on 300+ poisoned NPM packages
+  - Checks `package.json` for direct dependencies
+  - Checks `package-lock.json`, `yarn.lock`, and `pnpm-lock.yaml` for exact locked versions (including transitive dependencies)
 - **Active infections**: SHA1HULUD runners, malicious workflows, suspicious repo descriptions
 
 ## Prerequisites
@@ -95,9 +97,18 @@ See [Design Document](docs/plans/2025-11-24-shai-hulud-scanner-design.md) for de
 ### Components
 
 - `scan-shai-hulud.sh`: Main bash orchestrator using gh CLI
-- `lib/check-dependencies.js`: Dependency matching with semver
+- `lib/check-dependencies.js`: Dependency matching with semver (supports npm, yarn, and pnpm lock files)
 - `lib/check-infections.js`: Infection indicator detection
 - `lib/semver-match.js`: Version range matching utility
+
+### Lock File Support
+
+The scanner automatically detects and parses:
+- **package-lock.json** (npm v1 and v2+ formats)
+- **yarn.lock** (Yarn Classic and Berry)
+- **pnpm-lock.yaml** (pnpm)
+
+Lock files enable detection of malicious transitive dependencies (dependencies-of-dependencies) with exact version matching.
 
 ## Rate Limits
 
