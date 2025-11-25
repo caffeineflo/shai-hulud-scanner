@@ -95,7 +95,7 @@ echo "Fetching repositories from $ORG_NAME..."
 # Get all repos
 REPOS=$(gh api "/orgs/$ORG_NAME/repos" \
     --paginate \
-    --jq '.[] | {name: .name, full_name: .full_name, default_branch: .default_branch, description: .description}' \
+    --jq '.[] | {name: .name, full_name: .full_name, default_branch: .default_branch, description: .description, archived: .archived}' \
     | jq -s '.')
 
 TOTAL_REPOS=$(echo "$REPOS" | jq 'length')
@@ -139,6 +139,7 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
     FULL_NAME=$(echo "$repo" | jq -r '.full_name')
     DEFAULT_BRANCH=$(echo "$repo" | jq -r '.default_branch')
     DESCRIPTION=$(echo "$repo" | jq -r '.description // ""')
+    ARCHIVED=$(echo "$repo" | jq -r '.archived')
 
     # Skip until we reach the resume point
     if [ "$SKIP_UNTIL_FOUND" = true ]; then
@@ -150,7 +151,11 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
         fi
     fi
 
-    echo "[$((SCANNED + 1))/$TOTAL_REPOS] Scanning: $FULL_NAME"
+    if [ "$ARCHIVED" = "true" ]; then
+        echo "[$((SCANNED + 1))/$TOTAL_REPOS] Scanning: $FULL_NAME [ARCHIVED]"
+    else
+        echo "[$((SCANNED + 1))/$TOTAL_REPOS] Scanning: $FULL_NAME"
+    fi
 
     # Get git tree recursively to find all npm-related files
     TREE_RESULT=$(gh api "/repos/$FULL_NAME/git/trees/$DEFAULT_BRANCH?recursive=1" 2>/dev/null || echo "")
@@ -354,8 +359,8 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
         echo "$INF_FINDINGS" | jq -r '.[] | "      - \(.type): \(.name // .file // .evidence)"'
 
         # Add to results.json
-        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson indicators "$INF_FINDINGS" --argjson warnings "$SCAN_WARNINGS" \
-            '{repo: $repo, indicators: $indicators, warnings: $warnings}')
+        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson archived "$ARCHIVED" --argjson indicators "$INF_FINDINGS" --argjson warnings "$SCAN_WARNINGS" \
+            '{repo: $repo, archived: $archived, indicators: $indicators, warnings: $warnings}')
         jq ".findings.confirmed_infected += [$FINDING]" "$OUTPUT_FILE" > "$OUTPUT_FILE.tmp" && \
             mv "$OUTPUT_FILE.tmp" "$OUTPUT_FILE"
 
@@ -364,8 +369,8 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
         echo "$DEP_FINDINGS" | jq -r '.[] | "      - \(.package)@\(.malicious_version) (in \(.package_json_path // "package.json"))"'
 
         # Add to results.json
-        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson deps "$DEP_FINDINGS" --argjson warnings "$SCAN_WARNINGS" \
-            '{repo: $repo, vulnerabilities: $deps, warnings: $warnings}')
+        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson archived "$ARCHIVED" --argjson deps "$DEP_FINDINGS" --argjson warnings "$SCAN_WARNINGS" \
+            '{repo: $repo, archived: $archived, vulnerabilities: $deps, warnings: $warnings}')
         jq ".findings.likely_vulnerable += [$FINDING]" "$OUTPUT_FILE" > "$OUTPUT_FILE.tmp" && \
             mv "$OUTPUT_FILE.tmp" "$OUTPUT_FILE"
 
@@ -374,8 +379,8 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
         echo "$AFFECTED_PKGS" | jq -r '.[] | "      - \(.package)@\(.declared_version) (malicious: \(.malicious_versions | join(", "))) (in \(.package_json_path // "package.json"))"'
 
         # Add to results.json
-        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson pkgs "$AFFECTED_PKGS" --argjson warnings "$SCAN_WARNINGS" \
-            '{repo: $repo, packages: $pkgs, warnings: $warnings}')
+        FINDING=$(jq -n --arg repo "$FULL_NAME" --argjson archived "$ARCHIVED" --argjson pkgs "$AFFECTED_PKGS" --argjson warnings "$SCAN_WARNINGS" \
+            '{repo: $repo, archived: $archived, packages: $pkgs, warnings: $warnings}')
         jq ".findings.has_affected_packages += [$FINDING]" "$OUTPUT_FILE" > "$OUTPUT_FILE.tmp" && \
             mv "$OUTPUT_FILE.tmp" "$OUTPUT_FILE"
     else

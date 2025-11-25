@@ -99,6 +99,10 @@ ORG_NAME=facebook ./scan-shai-hulud.sh
 
 [6/150] Scanning: YourOrg/non-nodejs-repo
   → No Node.js packages found (searched for package.json and all lock file types)
+
+[7/150] Scanning: YourOrg/old-project [ARCHIVED]
+  ⚠️  LIKELY_VULNERABLE
+      - posthog-node@5.11.3 (in package.json)
 ```
 
 **Status Meanings:**
@@ -122,6 +126,7 @@ ORG_NAME=facebook ./scan-shai-hulud.sh
     "likely_vulnerable": [
       {
         "repo": "YourOrg/example-monorepo",
+        "archived": false,
         "vulnerabilities": [
           {
             "package": "posthog-node",
@@ -144,6 +149,7 @@ ORG_NAME=facebook ./scan-shai-hulud.sh
     "has_affected_packages": [
       {
         "repo": "YourOrg/safe-repo",
+        "archived": false,
         "packages": [
           {
             "package": "posthog-node",
