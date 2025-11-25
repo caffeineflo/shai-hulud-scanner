@@ -7,7 +7,7 @@ Comprehensive scanner to detect GitHub repositories affected by the Shai-Hulud N
 ## Overview
 
 This scanner detects:
-- **Vulnerable dependencies**: Repos depending on 300+ poisoned NPM packages
+- **Vulnerable dependencies**: Repos depending on 1000+ poisoned NPM packages (list fetched live from [Wiz Research](https://github.com/wiz-sec-public/wiz-research-iocs))
   - Supports **monorepos**: Recursively finds all `package.json` files in any subdirectory
   - Checks `package.json` for direct dependencies
   - Checks `package-lock.json`, `yarn.lock`, and `pnpm-lock.yaml` for exact locked versions (including transitive dependencies)
@@ -21,6 +21,7 @@ This scanner detects:
 - [GitHub CLI](https://cli.github.com) (authenticated)
 - Node.js 16+
 - pnpm
+- curl (for fetching malicious packages list)
 
 ## Installation
 
@@ -196,9 +197,11 @@ See [Design Document](docs/plans/2025-11-24-shai-hulud-scanner-design.md) for de
 ### Components
 
 - `scan-shai-hulud.sh`: Main bash orchestrator using gh CLI
-- `lib/check-dependencies.js`: Dependency matching with semver (supports npm, yarn, and pnpm lock files)
+- `lib/check-dependencies.js`: Dependency matching (supports npm, yarn, and pnpm lock files)
 - `lib/check-infections.js`: Infection indicator detection
-- `lib/semver-match.js`: Version range matching utility
+- `lib/semver-match.js`: Local semver range matching (no external dependencies)
+- `lib/csv-parser.js`: Parser for Wiz research CSV format
+- `lib/malicious-packages.js`: Fetches malicious packages list from GitHub at runtime
 
 ### Lock File Support
 
@@ -222,4 +225,4 @@ This scanner is read-only and makes no modifications to repositories. It only fe
 ## References
 
 - [Shai-Hulud Attack Analysis](https://helixguard.io/blog/shai-hulud-returns)
-- [Malicious Packages List](shai_hulud_packages.json)
+- [Malicious Packages List (Wiz Research)](https://github.com/wiz-sec-public/wiz-research-iocs/blob/main/reports/shai-hulud-2-packages.csv)

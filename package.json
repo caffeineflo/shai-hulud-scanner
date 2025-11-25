@@ -6,9 +6,6 @@
   "scripts": {
     "test": "node test/run-tests.js"
   },
-  "dependencies": {
-    "semver": "^7.6.0"
-  },
   "author": "",
   "license": "MIT"
 }

@@ -12,6 +12,8 @@ ORG_NAME="${ORG_NAME:-Betterment}"
 CACHE_FILE=".scan-cache.json"
 OUTPUT_FILE="results.json"
 CHECKPOINT_INTERVAL=50
+MALICIOUS_PACKAGES_CSV_URL="https://raw.githubusercontent.com/wiz-sec-public/wiz-research-iocs/main/reports/shai-hulud-2-packages.csv"
+MALICIOUS_PACKAGES_CSV=""
 
 # === Preflight Checks ===
 
@@ -42,14 +44,30 @@ if [ ! -d "node_modules" ]; then
     exit 1
 fi
 
-# Check for malicious packages list
-if [ ! -f "shai_hulud_packages.json" ]; then
-    echo "ERROR: shai_hulud_packages.json not found"
-    exit 1
-fi
-
 echo "✓ All preflight checks passed"
 echo
+
+# === Fetch Malicious Packages List ===
+echo "Fetching malicious packages list from Wiz research..."
+MALICIOUS_PACKAGES_CSV=$(curl --silent --fail "$MALICIOUS_PACKAGES_CSV_URL") || {
+    echo "ERROR: Failed to fetch malicious packages CSV from $MALICIOUS_PACKAGES_CSV_URL"
+    exit 1
+}
+
+# Write CSV to temp file for Node.js to read
+MALICIOUS_PACKAGES_FILE="/tmp/shai-hulud-packages-$$.csv"
+echo "$MALICIOUS_PACKAGES_CSV" > "$MALICIOUS_PACKAGES_FILE"
+
+# Count packages
+PACKAGE_COUNT=$(tail -n +2 "$MALICIOUS_PACKAGES_FILE" | grep --count . || echo "0")
+echo "✓ Loaded $PACKAGE_COUNT malicious package entries"
+echo
+
+# Cleanup function
+cleanup() {
+    rm -f "$MALICIOUS_PACKAGES_FILE"
+}
+trap cleanup EXIT
 
 # === Cache Handling ===
 
@@ -255,8 +273,10 @@ echo "$REPOS" | jq -c '.[]' | while read -r repo; do
         # Check dependencies
         DEP_RESULT=$(node -e "
             const { checkDependencies } = require('./lib/check-dependencies');
+            const { loadFromCsvContent } = require('./lib/malicious-packages');
             const fs = require('fs');
-            const malicious = JSON.parse(fs.readFileSync('shai_hulud_packages.json', 'utf8'));
+            const csvContent = fs.readFileSync('$MALICIOUS_PACKAGES_FILE', 'utf8');
+            const malicious = loadFromCsvContent(csvContent);
             const packageJson = fs.readFileSync('$TMP_PKG', 'utf8');
 
             const lockFilesData = $LOCK_FILES_JSON;

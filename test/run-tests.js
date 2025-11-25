@@ -2,6 +2,7 @@ const { execSync } = require('child_process');
 
 const tests = [
   'test/test-semver-match.js',
+  'test/test-csv-parser.js',
   'test/test-check-dependencies.js',
   'test/test-check-infections.js'
 ];
